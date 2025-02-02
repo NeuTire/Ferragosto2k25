@@ -148,3 +148,13 @@ function revealSections() {
 
 window.addEventListener('scroll', revealSections);
 revealSections(); // Inizializza all'apertura della pagina
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  // Toggle the "show" class when the hamburger is clicked
+  menuToggle.addEventListener("click", function () {
+    navLinks.classList.toggle("show");
+  });
+});
