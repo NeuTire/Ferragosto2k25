@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <!-- Ensure responsive behavior on mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Neutire | Tech Solutions & Innovation</title>
   
@@ -11,8 +12,11 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
+  <!-- Animate.css (Optional) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap"
     rel="stylesheet"
@@ -22,6 +26,7 @@
   <!-- tsParticles container -->
   <div id="tsparticles"></div>
 
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="nav-container">
       <a href="index-en.html" class="logo">NEUTIRE</a>
@@ -111,7 +116,7 @@
     <h2 class="section-title">Our Solutions</h2>
     <div class="carousel-container">
       <div class="carousel-track">
-        <!-- Example single card (add more if you like) -->
+        <!-- Example single card -->
         <div class="solution-card">
           <h3>Workshop WB025</h3>
           <p>A website for an international workshop.</p>
@@ -132,20 +137,27 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact hidden">
+  <!-- Fixed the ID and class here -->
+  <section id="contact" class="hidden">
     <div class="contact-bg">
       <h2 class="section-title">Let’s Build Something Great Together</h2>
       <div class="contact-wrapper">
         <!-- Left Column: Contact Info -->
         <div class="contact-info">
           <h3>We’re Excited to Hear from You!</h3>
-          <p>Got an idea, a project, or just curious about how we can help? Whether you have a big vision or a small question, we’d love to chat and explore how we can bring value to your business.</p>
+          <p>
+            Got an idea, a project, or just curious about how we can help?
+            Whether you have a big vision or a small question, we’d love to
+            chat and explore how we can bring value to your business.
+          </p>
           <p>Drop us a message, and let's start turning your ideas into reality.</p>
           <div class="info-item">
-            <strong>Email us at:</strong> <a href="mailto:alessio.mezzina@phd.unict.it">alessio.mezzina@phd.unict.it</a>
+            <strong>Email us at:</strong> 
+            <a href="mailto:alessio.mezzina@phd.unict.it">alessio.mezzina@phd.unict.it</a>
           </div>
           <div class="info-item">
-            <strong>Call or WhatsApp:</strong> <a href="tel:+393332040976">+39 333 204 0976</a>
+            <strong>Call or WhatsApp:</strong> 
+            <a href="tel:+393332040976">+39 333 204 0976</a>
           </div>
         </div>
 
@@ -162,6 +174,8 @@
             </label>
             <label>
               <input type="email" name="email" placeholder="Email" required />
+            </label>
+            <label>
               <textarea
                 name="message"
                 placeholder="Your Message"

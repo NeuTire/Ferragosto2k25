@@ -2,6 +2,7 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
+  <!-- Ensure responsive behavior on mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Neutire, Soluzioni Tecnologiche & Innovazione</title>
   
@@ -11,10 +12,15 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap"
+  <link 
     rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap"
+  />
+  
+  <!-- Animate.css (Optional) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
 </head>
 <body>
@@ -22,7 +28,6 @@
   <div id="tsparticles"></div>
 
   <!-- Navigation -->
-  <!-- Modified Navigation -->
   <nav class="navbar">
     <div class="nav-container">
       <a href="index.html" class="logo">NEUTIRE</a>
@@ -132,20 +137,32 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact hidden">
+  <!-- Fixed the ID and class here -->
+  <section id="contact" class="hidden">
     <div class="contact-bg">
       <h2 class="section-title">Costruiamo Qualcosa di Straordinario Insieme</h2>
       <div class="contact-wrapper">
         <!-- Left Column: Contact Info -->
         <div class="contact-info">
           <h3>Siamo Felici di Conoscerti!</h3>
-          <p>Hai un’idea, un progetto o semplicemente una curiosità su come possiamo aiutarti? Che si tratti di una grande visione o di una semplice domanda, siamo qui per ascoltarti e capire come possiamo aggiungere valore al tuo business.</p>
-          <p>Scrivici un messaggio e iniziamo a trasformare le tue idee in realtà.</p>
+          <p>
+            Hai un’idea, un progetto o semplicemente una curiosità su come 
+            possiamo aiutarti? Che si tratti di una grande visione o di una 
+            semplice domanda, siamo qui per ascoltarti e capire come possiamo 
+            aggiungere valore al tuo business.
+          </p>
+          <p>
+            Scrivici un messaggio e iniziamo a trasformare le tue idee in realtà.
+          </p>
           <div class="info-item">
-            <strong>Email:</strong> <a href="mailto:alessio.mezzina@phd.unict.it">alessio.mezzina@phd.unict.it</a>
+            <strong>Email:</strong> 
+            <a href="mailto:alessio.mezzina@phd.unict.it">
+              alessio.mezzina@phd.unict.it
+            </a>
           </div>
           <div class="info-item">
-            <strong>Telefono o WhatsApp:</strong> <a href="tel:+393332040976">+39 333 204 0976</a>
+            <strong>Telefono o WhatsApp:</strong> 
+            <a href="tel:+393332040976">+39 333 204 0976</a>
           </div>
         </div>
 
@@ -162,6 +179,8 @@
             </label>
             <label>
               <input type="email" name="email" placeholder="Email" required />
+            </label>
+            <label>
               <textarea
                 name="message"
                 placeholder="Il tuo messaggio"
