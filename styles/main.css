@@ -43,7 +43,7 @@ body {
   text-decoration: none;
 }
 
-/* Link desktop */
+/* Navigation Links */
 .nav-links {
   display: flex;
   align-items: center;
@@ -80,7 +80,7 @@ body {
   opacity: 0.5;
 }
 
-/* Hamburger toggle */
+/* Hamburger Toggle */
 .menu-toggle {
   display: none;
   background: none;
@@ -137,12 +137,15 @@ body {
 .parallax-hero {
   background: url("../images/hero.jpg") no-repeat center center fixed;
   background-size: cover;
-  background-attachment: fixed; 
+  background-attachment: fixed;
 }
 
 .parallax-hero .overlay {
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
@@ -152,7 +155,7 @@ body {
   z-index: 2;
 }
 
-/* SEZIONE TITOLI */
+/* SECTION TITLES */
 .section-title {
   position: relative;
   display: inline-block;
@@ -173,7 +176,7 @@ body {
   bottom: -10px;
 }
 
-/* SEZIONI BASE */
+/* BASE SECTIONS */
 .services,
 .solutions,
 .contact {
@@ -182,6 +185,7 @@ body {
   margin: 0 auto;
 }
 
+/* SERVICES GRID */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -189,7 +193,7 @@ body {
   margin-top: 3rem;
 }
 
-/* CARDS SERVIZI */
+/* SERVICE CARD */
 .service-card {
   background: var(--primary-color);
   padding: 2rem;
@@ -209,7 +213,7 @@ body {
   margin-bottom: 1rem;
 }
 
-/* SEZIONE SOLUTIONS (carousel) */
+/* CAROUSEL */
 .carousel-container {
   overflow: hidden;
   position: relative;
@@ -256,7 +260,7 @@ body {
   opacity: 0.8;
 }
 
-/* CONTACT */
+/* CONTACT SECTION */
 #contact {
   padding: 0;
 }
@@ -342,16 +346,16 @@ footer {
   background: var(--primary-color);
 }
 
-/* ANIMAZIONE ENTRATA */
+/* ANIMATION FOR HIDDEN ELEMENTS */
 .hidden {
-  opacity: 0; 
-  transform: translateY(20px); 
+  opacity: 0;
+  transform: translateY(20px);
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 /* TYPEWRITER CURSOR */
 .hero-content h1 {
-  overflow: hidden; 
+  overflow: hidden;
   white-space: nowrap;
   margin: 0 auto;
   position: relative;
@@ -372,13 +376,12 @@ footer {
   50% { opacity: 0; }
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES (Mobile) */
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block; /* Show hamburger on mobile */
+    display: block;
   }
-
-  /* Hide menu links by default on mobile */
+  
   .nav-links {
     position: absolute;
     top: 100%;
@@ -391,91 +394,36 @@ footer {
     transition: transform 0.3s ease-in-out;
     display: none;
   }
-
+  
   .nav-links.show {
     transform: translateY(0);
     display: flex;
   }
-
+  
   .main-links {
     flex-direction: column;
     gap: 1rem;
   }
-
+  
   .language-links {
     padding: 1rem 0 0;
     margin-top: 1rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     justify-content: center;
   }
-
+  
   .language-links::before {
     display: none;
   }
-
+  
   .hero-content h1 {
     font-size: 2.2rem;
   }
-
-  /* Fix background-attachment on mobile */
+  
   .parallax-hero {
     background-attachment: scroll;
   }
-
-  .contact-wrapper {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block; /* Show hamburger on mobile */
-  }
-
-  /* Hide menu links by default on mobile */
-  .nav-links {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background: var(--primary-color);
-    flex-direction: column;
-    width: 100%;
-    padding: 1rem;
-    transform: translateY(-100%);
-    transition: transform 0.3s ease-in-out;
-    display: none;
-  }
-
-  .nav-links.show {
-    transform: translateY(0);
-    display: flex;
-  }
-
-  .main-links {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .language-links {
-    padding: 1rem 0 0;
-    margin-top: 1rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    justify-content: center;
-  }
-
-  .language-links::before {
-    display: none;
-  }
-
-  .hero-content h1 {
-    font-size: 2.2rem;
-  }
-
-  /* Fix background-attachment on mobile */
-  .parallax-hero {
-    background-attachment: scroll;
-  }
-
+  
   .contact-wrapper {
     flex-direction: column;
   }
