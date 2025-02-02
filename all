@@ -1,0 +1,1821 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neutire | Soluzioni Tecnologiche & Innovazione</title>
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="styles/main.css" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- tsParticles container -->
+  <div id="tsparticles"></div>
+
+  <!-- Navigation -->
+  <!-- Modified Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">NEUTIRE</a>
+
+      <!-- Hamburger Icon -->
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Combined Navigation Links -->
+      <div class="nav-links">
+        <!-- Main Links -->
+        <div class="main-links">
+          <a href="#home">Home</a>
+          <a href="#services">Servizi</a>
+          <a href="#solutions">Soluzioni</a>
+          <a href="#contact">Contatti</a>
+        </div>
+
+        <!-- Language Links -->
+        <div class="language-links">
+          <a href="index-en.html">EN</a>
+          <a href="index.html" style="color: var(--accent-color);">IT</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero parallax-hero">
+    <!-- Dark overlay -->
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1 class="typewriter" id="typeLine1"></h1>
+      <h1><span>Soluzioni di IA personalizzate per problemi reali</span></h1>
+      <p>Esperti in consulenza IT, sviluppo di app, sviluppo di siti web e IA all'avanguardia.</p>
+      <br>
+      <a href="#contact" class="cta-button">Richiedi una consulenza</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services hidden">
+    <h2 class="section-title">I nostri Servizi</h2>
+    <div class="services-grid">
+      <!-- 1) IT Consulting -->
+      <div class="service-card">
+        <h3>Consulenza IT</h3>
+        <p>Pianificazione strategica delle tecnologie e soluzioni enterprise.</p>
+        <a href="it-consulting-it.html" class="cta-button">Scopri di più</a>
+      </div>
+      
+      <!-- 2) Android App Development -->
+      <div class="service-card">
+        <h3>Sviluppo App Android</h3>
+        <p>Applicazioni native e multipiattaforma ad alte prestazioni.</p>
+        <a href="android-apps-it.html" class="cta-button">Scopri di più</a>
+      </div>
+      
+      <!-- 3) Web Development -->
+      <div class="service-card">
+        <h3>Sviluppo Web</h3>
+        <p>Siti personalizzati con design moderno, scalabilità e prestazioni robuste.</p>
+        <a href="web-development-it.html" class="cta-button">Scopri di più</a>
+      </div>
+
+      <!-- 4) AI Solutions -->
+      <div class="service-card">
+        <h3>Soluzioni di IA</h3>
+        <p>Modelli di machine learning, sistemi di automazione e analisi avanzate.</p>
+        <a href="ai-solutions-it.html" class="cta-button">Scopri di più</a>
+      </div>
+
+      <!-- 5) Software Development -->
+      <div class="service-card">
+        <h3>Sviluppo Software</h3>
+        <p>Software su misura, sistemi di gestione e automazione dei processi.</p>
+        <a href="software-development-it.html" class="cta-button">Scopri di più</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions Section -->
+  <section id="solutions" class="solutions hidden">
+    <h2 class="section-title">Le nostre Soluzioni</h2>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <div class="solution-card">
+          <h3>Workshop WB025</h3>
+          <p>Un sito web per un workshop internazionale.</p>
+          <a 
+            href="https://timeassassinrg.github.io/WorkShop_CIS_GROUP/" 
+            target="_blank" 
+            class="cta-button"
+          >
+            Visita la soluzione
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-nav">
+      <button class="carousel-btn prev">Prev</button>
+      <button class="carousel-btn next">Next</button>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact hidden">
+    <div class="contact-bg">
+      <h2 class="section-title">Costruiamo Qualcosa di Straordinario Insieme</h2>
+      <div class="contact-wrapper">
+        <!-- Left Column: Contact Info -->
+        <div class="contact-info">
+          <h3>Siamo Felici di Conoscerti!</h3>
+          <p>Hai un’idea, un progetto o semplicemente una curiosità su come possiamo aiutarti? Che si tratti di una grande visione o di una semplice domanda, siamo qui per ascoltarti e capire come possiamo aggiungere valore al tuo business.</p>
+          <p>Scrivici un messaggio e iniziamo a trasformare le tue idee in realtà.</p>
+          <div class="info-item">
+            <strong>Email:</strong> <a href="mailto:alessio.mezzina@phd.unict.it">alessio.mezzina@phd.unict.it</a>
+          </div>
+          <div class="info-item">
+            <strong>Telefono o WhatsApp:</strong> <a href="tel:+393332040976">+39 333 204 0976</a>
+          </div>
+        </div>
+
+        <!-- Right Column: Form -->
+        <div class="contact-form-wrapper">
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/xzzdgglb"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <label>
+              <input type="text" name="name" placeholder="Nome" required />
+            </label>
+            <label>
+              <input type="email" name="email" placeholder="Email" required />
+              <textarea
+                name="message"
+                placeholder="Il tuo messaggio"
+                rows="5"
+                required
+              ></textarea>
+            </label>
+            <button type="submit">Invia Messaggio</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Neutire. Tutti i diritti riservati.</p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+  <script src="scripts/contentLoader.js"></script>
+  <script src="scripts/main.js"></script>
+
+  <!-- tsParticles init -->
+  <script>
+    tsParticles.load("tsparticles", {
+      fullScreen: {
+        enable: true,
+        zIndex: -999
+      },
+      fpsLimit: 60,
+      particles: {
+        number: {
+          value: 30,
+          density: {
+            enable: true,
+            area: 800
+          }
+        },
+        color: {
+          value: ["#00C9A7"]
+        },
+        shape: {
+          type: "circle"
+        },
+        opacity: {
+          value: 0.8,
+          random: true
+        },
+        size: {
+          value: { min: 3, max: 7 },
+          random: true
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: "none",
+          random: true,
+          straight: false,
+          outModes: {
+            default: "out"
+          }
+        }
+      },
+      interactivity: {
+        detectsOn: "canvas",
+        events: {
+          onHover: {
+            enable: true,
+            mode: "repulse"
+          },
+          onClick: {
+            enable: true,
+            mode: "push"
+          },
+          resize: true
+        },
+        modes: {
+          repulse: {
+            distance: 100,
+            duration: 0.4
+          },
+          push: {
+            quantity: 4
+          }
+        }
+      },
+      detectRetina: true
+    }).then((container) => {
+      if (container?.canvas?.element) {
+        const canvasEl = container.canvas.element;
+        canvasEl.style.transform = "translate3d(0, 0, 0)";
+        canvasEl.style.willChange = "transform";
+        canvasEl.style.position = "fixed";
+        canvasEl.style.top = "0";
+        canvasEl.style.left = "0";
+        canvasEl.style.width = "100vw";
+        canvasEl.style.height = "100vh";
+      }
+    });
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neutire | Tech Solutions & Innovation</title>
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="styles/main.css" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- tsParticles container -->
+  <div id="tsparticles"></div>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index-en.html" class="logo">NEUTIRE</a>
+
+      <!-- Hamburger Icon -->
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Combined Navigation Links -->
+      <div class="nav-links">
+        <!-- Main Links -->
+        <div class="main-links">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#solutions">Solutions</a>
+          <a href="#contact">Contacts</a>
+        </div>
+
+        <!-- Language Links -->
+        <div class="language-links">
+          <a href="index-en.html" style="color: var(--accent-color);">EN</a>
+          <a href="index.html">IT</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero parallax-hero">
+    <!-- Dark overlay -->
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1 class="typewriter" id="typeLine2"></h1>
+      <h1><span>Custom AI Solutions for Real Problems</span></h1>
+      <p>Expertise in IT consulting, app development, website development, and cutting-edge AI.</p>
+      <br>
+      <a href="#contact" class="cta-button">Schedule a Consultation</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services hidden">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services-grid">
+      <!-- 1) IT Consulting -->
+      <div class="service-card">
+        <h3>IT Consulting</h3>
+        <p>Strategic technology planning and enterprise solutions.</p>
+        <a href="it-consulting.html" class="cta-button">Learn More</a>
+      </div>
+      
+      <!-- 2) Android App Development -->
+      <div class="service-card">
+        <h3>Android App Development</h3>
+        <p>Native and cross-platform mobile applications with seamless performance.</p>
+        <a href="android-apps.html" class="cta-button">Learn More</a>
+      </div>
+      
+      <!-- 3) Web Development -->
+      <div class="service-card">
+        <h3>Web Development</h3>
+        <p>Custom websites with modern design, scalability, and robust performance.</p>
+        <a href="web-development.html" class="cta-button">Learn More</a>
+      </div>
+
+      <!-- 4) AI Solutions -->
+      <div class="service-card">
+        <h3>AI Solutions</h3>
+        <p>Machine learning models, automation systems, and advanced data analytics.</p>
+        <a href="ai-solutions.html" class="cta-button">Learn More</a>
+      </div>
+
+      <!-- 5) Software Development -->
+      <div class="service-card">
+        <h3>Software Development</h3>
+        <p>Bespoke software, management systems, and process automation.</p>
+        <a href="software-development.html" class="cta-button">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions Section -->
+  <section id="solutions" class="solutions hidden">
+    <h2 class="section-title">Our Solutions</h2>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <!-- Example single card (add more if you like) -->
+        <div class="solution-card">
+          <h3>Workshop WB025</h3>
+          <p>A website for an international workshop.</p>
+          <a 
+            href="https://timeassassinrg.github.io/WorkShop_CIS_GROUP/" 
+            target="_blank" 
+            class="cta-button"
+          >
+            Visit Solution
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-nav">
+      <button class="carousel-btn prev">Prev</button>
+      <button class="carousel-btn next">Next</button>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact hidden">
+    <div class="contact-bg">
+      <h2 class="section-title">Let’s Build Something Great Together</h2>
+      <div class="contact-wrapper">
+        <!-- Left Column: Contact Info -->
+        <div class="contact-info">
+          <h3>We’re Excited to Hear from You!</h3>
+          <p>Got an idea, a project, or just curious about how we can help? Whether you have a big vision or a small question, we’d love to chat and explore how we can bring value to your business.</p>
+          <p>Drop us a message, and let's start turning your ideas into reality.</p>
+          <div class="info-item">
+            <strong>Email us at:</strong> <a href="mailto:alessio.mezzina@phd.unict.it">alessio.mezzina@phd.unict.it</a>
+          </div>
+          <div class="info-item">
+            <strong>Call or WhatsApp:</strong> <a href="tel:+393332040976">+39 333 204 0976</a>
+          </div>
+        </div>
+
+        <!-- Right Column: Form -->
+        <div class="contact-form-wrapper">
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/xzzdgglb"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <label>
+              <input type="text" name="name" placeholder="Name" required />
+            </label>
+            <label>
+              <input type="email" name="email" placeholder="Email" required />
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                rows="5"
+                required
+              ></textarea>
+            </label>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Neutire. All rights reserved.</p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+  <script src="scripts/contentLoader.js"></script>
+  <script src="scripts/main.js"></script>
+
+  <!-- tsParticles init -->
+  <script>
+    tsParticles.load("tsparticles", {
+      fullScreen: {
+        enable: true,
+        zIndex: -999
+      },
+      fpsLimit: 60,
+      particles: {
+        number: {
+          value: 30,
+          density: {
+            enable: true,
+            area: 800
+          }
+        },
+        color: {
+          value: ["#00C9A7"]
+        },
+        shape: {
+          type: "circle"
+        },
+        opacity: {
+          value: 0.8,
+          random: true
+        },
+        size: {
+          value: { min: 3, max: 7 },
+          random: true
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: "none",
+          random: true,
+          straight: false,
+          outModes: {
+            default: "out"
+          }
+        }
+      },
+      interactivity: {
+        detectsOn: "canvas",
+        events: {
+          onHover: {
+            enable: true,
+            mode: "repulse"
+          },
+          onClick: {
+            enable: true,
+            mode: "push"
+          },
+          resize: true
+        },
+        modes: {
+          repulse: {
+            distance: 100,
+            duration: 0.4
+          },
+          push: {
+            quantity: 4
+          }
+        }
+      },
+      detectRetina: true
+    }).then((container) => {
+      if (container?.canvas?.element) {
+        const canvasEl = container.canvas.element;
+        canvasEl.style.transform = "translate3d(0, 0, 0)";
+        canvasEl.style.willChange = "transform";
+        canvasEl.style.position = "fixed";
+        canvasEl.style.top = "0";
+        canvasEl.style.left = "0";
+        canvasEl.style.width = "100vw";
+        canvasEl.style.height = "100vh";
+      }
+    });
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Soluzioni di IA | Neutire</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <!-- Navbar -->
+  
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">NEUTIRE</a>
+
+      <!-- Hamburger Icon -->
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Combined Navigation Links -->
+      <div class="nav-links">
+        <!-- Main Links -->
+        <div class="main-links">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#services">Servizi</a>
+          <a href="index.html#solutions">Soluzioni</a>
+          <a href="index.html#contacts">Contatti</a>
+        </div>
+
+        <!-- Language Links -->
+        <div class="language-links">
+          <a href="ai-solutions.html">EN</a>
+          <a href="ai-solutions-it.html" style="color: var(--accent-color);">IT</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="service-detail-hero" 
+           style="background: url('images/ai-hero.jpg') center center / cover no-repeat fixed;">
+    <div class="overlay"></div>
+    <div class="service-hero-content">
+      <h1 class="service-title">Soluzioni di IA</h1>
+      <p class="service-subtitle">
+        Modelli di machine learning, sistemi di automazione e analisi avanzate.
+      </p>
+    </div>
+  </section>
+
+  <!-- Service Detail -->
+  <section class="service-detail">
+    <div class="service-detail-container">
+      <a href="index.html#services" class="back-button">&larr; Tutti i Servizi</a>
+      <h2>Soluzioni di IA</h2>
+      <p class="service-description">
+        Le nostre soluzioni di IA includono analisi predittive, elaborazione del linguaggio naturale (NLP),
+        computer vision e automazione intelligente. Sviluppiamo modelli di machine learning utilizzando
+        TensorFlow, PyTorch e Scikit-learn, adottando tecniche sia supervisionate che non supervisionate.
+      </p>
+      <div class="service-details">
+        <h3>Cosa Offriamo</h3>
+        <p>
+          Per l’NLP, utilizziamo trasformatori (BERT, GPT) e spaCy. 
+          Offriamo inoltre processi di automazione basati su IA utilizzando strumenti RPA come UiPath,
+          distribuendo i modelli su infrastrutture cloud scalabili per inferenze in tempo reale.
+        </p>
+        <a href="index.html#contact" class="cta-button">Contattaci</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Neutire. Tutti i diritti riservati.</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Solutions | Neutire</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index-en.html" class="logo">NEUTIRE</a>
+
+      <!-- Hamburger Icon -->
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Combined Navigation Links -->
+      <div class="nav-links">
+        <!-- Main Links -->
+        <div class="main-links">
+          <a href="index-en.html#home">Home</a>
+          <a href="index-en.html#services">Services</a>
+          <a href="index-en.html#solutions">Solutions</a>
+          <a href="index-en.html#contacts">Contacts</a>
+        </div>
+
+        <!-- Language Links -->
+        <div class="language-links">
+          <a href="ai-solutions.html" style="color: var(--accent-color);">EN</a>
+          <a href="ai-solutions-it.html" >IT</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="service-detail-hero" 
+           style="background: url('images/ai-hero.jpg') center center / cover no-repeat fixed;">
+    <div class="overlay"></div>
+    <div class="service-hero-content">
+      <h1 class="service-title">AI Solutions</h1>
+      <p class="service-subtitle">
+        Machine learning models, automation systems, and advanced data analytics.
+      </p>
+    </div>
+  </section>
+
+  <!-- Service Detail -->
+  <section class="service-detail">
+    <div class="service-detail-container">
+      <a href="index-en.htmlhtml#services" class="back-button">&larr; All Services</a>
+      <h2>AI Solutions</h2>
+      <p class="service-description">
+        Our AI solutions include predictive analytics, natural language processing (NLP), 
+        computer vision, and intelligent automation. We develop ML models using 
+        TensorFlow, PyTorch, and Scikit-learn, applying both supervised and unsupervised techniques.
+      </p>
+      <div class="service-details">
+        <h3>What We Offer</h3>
+        <p>
+          For NLP, we work with transformers (BERT, GPT) and spaCy. 
+          We also offer AI-driven process automation using RPA tools like UiPath, 
+          deploying models on scalable cloud infrastructures for real-time inference.
+        </p>
+        <a href="index-en.htmlhtml#contact" class="cta-button">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Neutire. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sviluppo App Android | Neutire</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">NEUTIRE</a>
+
+      <!-- Hamburger Icon -->
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Combined Navigation Links -->
+      <div class="nav-links">
+        <!-- Main Links -->
+        <div class="main-links">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#services">Servizi</a>
+          <a href="index.html#solutions">Soluzioni</a>
+          <a href="index.html#contacts">Contatti</a>
+        </div>
+
+        <!-- Language Links -->
+        <div class="language-links">
+          <a href="android-apps.html" >EN</a>
+          <a href="android-apps-it.html" style="color: var(--accent-color);">IT</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="service-detail-hero" 
+           style="background: url('images/android-hero.jpg') center center / cover no-repeat fixed;">
+    <div class="overlay"></div>
+    <div class="service-hero-content">
+      <h1 class="service-title">Sviluppo App Android</h1>
+      <p class="service-subtitle">
+        Applicazioni native e multipiattaforma ad alte prestazioni.
+      </p>
+    </div>
+  </section>
+
+  <!-- Service Detail -->
+  <section class="service-detail">
+    <div class="service-detail-container">
+      <a href="index.html#services" class="back-button">&larr; Tutti i Servizi</a>
+      <h2>Sviluppo App Android</h2>
+      <p class="service-description">
+        Siamo specializzati nella creazione di app Android ad alte prestazioni, utilizzando Kotlin, Java
+        e framework moderni come Jetpack Compose. Il nostro processo di sviluppo prevede
+        l’ottimizzazione di UI/UX, l’integrazione di API (RESTful, GraphQL) e
+        l’autenticazione sicura (OAuth 2.0, JWT).
+      </p>
+      <div class="service-details">
+        <h3>Cosa Offriamo</h3>
+        <p>
+          Realizziamo anche app multipiattaforma con Flutter e React Native.
+          Il nostro processo di QA comprende test unitari, di integrazione e test di interfaccia
+          con Espresso, garantendo affidabilità prima del rilascio.
+        </p>
+        <a href="index.html#contact" class="cta-button">Contattaci</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Neutire. Tutti i diritti riservati.</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Android App Development | Neutire</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index-en.html" class="logo">NEUTIRE</a>
+
+      <!-- Hamburger Icon -->
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Combined Navigation Links -->
+      <div class="nav-links">
+        <!-- Main Links -->
+        <div class="main-links">
+          <a href="index-en.html#home">Home</a>
+          <a href="index-en.html#services">Services</a>
+          <a href="index-en.html#solutions">Solutions</a>
+          <a href="index-en.html#contacts">Contacts</a>
+        </div>
+
+        <!-- Language Links -->
+        <div class="language-links">
+          <a href="android-apps.html" style="color: var(--accent-color);">EN</a>
+          <a href="android-apps-it.html" >IT</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="service-detail-hero" 
+           style="background: url('images/android-hero.jpg') center center / cover no-repeat fixed;">
+    <div class="overlay"></div>
+    <div class="service-hero-content">
+      <h1 class="service-title">Android App Development</h1>
+      <p class="service-subtitle">
+        Native and cross-platform mobile applications with seamless performance.
+      </p>
+    </div>
+  </section>
+
+  <!-- Service Detail -->
+  <section class="service-detail">
+    <div class="service-detail-container">
+      <a href="index-en.html#services" class="back-button">&larr; All Services</a>
+      <h2>Android App Development</h2>
+      <p class="service-description">
+        We specialize in building high-performance Android apps using Kotlin, Java, 
+        and modern frameworks like Jetpack Compose. Our development process includes 
+        UI/UX design optimization, API integration (RESTful, GraphQL), and secure 
+        authentication (OAuth 2.0, JWT).
+      </p>
+      <div class="service-details">
+        <h3>What We Offer</h3>
+        <p>
+          We also develop cross-platform apps with Flutter and React Native. 
+          Our QA process involves rigorous testing, including unit, integration, 
+          and UI automation tests with Espresso, ensuring reliability before release.
+        </p>
+        <a href="index-en.html#contact" class="cta-button">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Neutire. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neutire | Tech Solutions & Innovation</title>
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="styles/main.css" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- tsParticles container -->
+  <div id="tsparticles"></div>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index-en.html" class="logo">NEUTIRE</a>
+
+      <!-- Hamburger Icon -->
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Combined Navigation Links -->
+      <div class="nav-links">
+        <!-- Main Links -->
+        <div class="main-links">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#solutions">Solutions</a>
+          <a href="#contact">Contacts</a>
+        </div>
+
+        <!-- Language Links -->
+        <div class="language-links">
+          <a href="index-en.html" style="color: var(--accent-color);">EN</a>
+          <a href="index.html">IT</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero parallax-hero">
+    <!-- Dark overlay -->
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1 class="typewriter" id="typeLine2"></h1>
+      <h1><span>Custom AI Solutions for Real Problems</span></h1>
+      <p>Expertise in IT consulting, app development, website development, and cutting-edge AI.</p>
+      <br>
+      <a href="#contact" class="cta-button">Schedule a Consultation</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services hidden">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services-grid">
+      <!-- 1) IT Consulting -->
+      <div class="service-card">
+        <h3>IT Consulting</h3>
+        <p>Strategic technology planning and enterprise solutions.</p>
+        <a href="it-consulting.html" class="cta-button">Learn More</a>
+      </div>
+      
+      <!-- 2) Android App Development -->
+      <div class="service-card">
+        <h3>Android App Development</h3>
+        <p>Native and cross-platform mobile applications with seamless performance.</p>
+        <a href="android-apps.html" class="cta-button">Learn More</a>
+      </div>
+      
+      <!-- 3) Web Development -->
+      <div class="service-card">
+        <h3>Web Development</h3>
+        <p>Custom websites with modern design, scalability, and robust performance.</p>
+        <a href="web-development.html" class="cta-button">Learn More</a>
+      </div>
+
+      <!-- 4) AI Solutions -->
+      <div class="service-card">
+        <h3>AI Solutions</h3>
+        <p>Machine learning models, automation systems, and advanced data analytics.</p>
+        <a href="ai-solutions.html" class="cta-button">Learn More</a>
+      </div>
+
+      <!-- 5) Software Development -->
+      <div class="service-card">
+        <h3>Software Development</h3>
+        <p>Bespoke software, management systems, and process automation.</p>
+        <a href="software-development.html" class="cta-button">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions Section -->
+  <section id="solutions" class="solutions hidden">
+    <h2 class="section-title">Our Solutions</h2>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <!-- Example single card (add more if you like) -->
+        <div class="solution-card">
+          <h3>Workshop WB025</h3>
+          <p>A website for an international workshop.</p>
+          <a 
+            href="https://timeassassinrg.github.io/WorkShop_CIS_GROUP/" 
+            target="_blank" 
+            class="cta-button"
+          >
+            Visit Solution
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-nav">
+      <button class="carousel-btn prev">Prev</button>
+      <button class="carousel-btn next">Next</button>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact hidden">
+    <div class="contact-bg">
+      <h2 class="section-title">Let’s Build Something Great Together</h2>
+      <div class="contact-wrapper">
+        <!-- Left Column: Contact Info -->
+        <div class="contact-info">
+          <h3>We’re Excited to Hear from You!</h3>
+          <p>Got an idea, a project, or just curious about how we can help? Whether you have a big vision or a small question, we’d love to chat and explore how we can bring value to your business.</p>
+          <p>Drop us a message, and let's start turning your ideas into reality.</p>
+          <div class="info-item">
+            <strong>Email us at:</strong> <a href="mailto:alessio.mezzina@phd.unict.it">alessio.mezzina@phd.unict.it</a>
+          </div>
+          <div class="info-item">
+            <strong>Call or WhatsApp:</strong> <a href="tel:+393332040976">+39 333 204 0976</a>
+          </div>
+        </div>
+
+        <!-- Right Column: Form -->
+        <div class="contact-form-wrapper">
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/xzzdgglb"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <label>
+              <input type="text" name="name" placeholder="Name" required />
+            </label>
+            <label>
+              <input type="email" name="email" placeholder="Email" required />
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                rows="5"
+                required
+              ></textarea>
+            </label>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Neutire. All rights reserved.</p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+  <script src="scripts/contentLoader.js"></script>
+  <script src="scripts/main.js"></script>
+
+  <!-- tsParticles init -->
+  <script>
+    tsParticles.load("tsparticles", {
+      fullScreen: {
+        enable: true,
+        zIndex: -999
+      },
+      fpsLimit: 60,
+      particles: {
+        number: {
+          value: 30,
+          density: {
+            enable: true,
+            area: 800
+          }
+        },
+        color: {
+          value: ["#00C9A7"]
+        },
+        shape: {
+          type: "circle"
+        },
+        opacity: {
+          value: 0.8,
+          random: true
+        },
+        size: {
+          value: { min: 3, max: 7 },
+          random: true
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: "none",
+          random: true,
+          straight: false,
+          outModes: {
+            default: "out"
+          }
+        }
+      },
+      interactivity: {
+        detectsOn: "canvas",
+        events: {
+          onHover: {
+            enable: true,
+            mode: "repulse"
+          },
+          onClick: {
+            enable: true,
+            mode: "push"
+          },
+          resize: true
+        },
+        modes: {
+          repulse: {
+            distance: 100,
+            duration: 0.4
+          },
+          push: {
+            quantity: 4
+          }
+        }
+      },
+      detectRetina: true
+    }).then((container) => {
+      if (container?.canvas?.element) {
+        const canvasEl = container.canvas.element;
+        canvasEl.style.transform = "translate3d(0, 0, 0)";
+        canvasEl.style.willChange = "transform";
+        canvasEl.style.position = "fixed";
+        canvasEl.style.top = "0";
+        canvasEl.style.left = "0";
+        canvasEl.style.width = "100vw";
+        canvasEl.style.height = "100vh";
+      }
+    });
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IT Consulting | Neutire</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">NEUTIRE</a>
+
+      <!-- Hamburger Icon -->
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Combined Navigation Links -->
+      <div class="nav-links">
+        <!-- Main Links -->
+        <div class="main-links">
+          <a href="index-en.html#home">Home</a>
+          <a href="index-en.html#services">Services</a>
+          <a href="index-en.html#solutions">Solutions</a>
+          <a href="index-en.html#contacts">Contacts</a>
+        </div>
+
+        <!-- Language Links -->
+        <div class="language-links">
+          <a href="it-consulting.html" style="color: var(--accent-color);" >EN</a>
+          <a href="it-consulting-it.html" >IT</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="service-detail-hero" 
+           style="background: url('images/it-consulting-hero.jpg') center center / cover no-repeat fixed;">
+    <div class="overlay"></div>
+    <div class="service-hero-content">
+      <h1 class="service-title">IT Consulting</h1>
+      <p class="service-subtitle">Strategic technology planning and enterprise solutions.</p>
+    </div>
+  </section>
+
+  <!-- Service Detail -->
+  <section class="service-detail">
+    <div class="service-detail-container">
+      <a href="index-en.html#services" class="back-button">&larr; All Services</a>
+      <h2>IT Consulting</h2>
+      <p class="service-description">
+        We provide end-to-end IT consulting services, including IT infrastructure assessment, 
+        cloud migration strategies, network security audits, and enterprise architecture design. 
+        Our expertise covers cybersecurity implementation (firewalls, SIEM systems), virtualization (VMware, Hyper-V), 
+        and DevOps practices (CI/CD pipelines, containerization with Docker and Kubernetes).
+      </p>
+      <div class="service-details">
+        <h3>What We Offer</h3>
+        <p>
+          We also offer technology roadmapping to align IT initiatives with business goals.
+          Talk to us to plan your next major technology move.
+        </p>
+        <a href="index-en.html#contact" class="cta-button">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Neutire. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sviluppo Software | Neutire</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">NEUTIRE</a>
+
+      <!-- Hamburger Icon -->
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Combined Navigation Links -->
+      <div class="nav-links">
+        <!-- Main Links -->
+        <div class="main-links">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#services">Servizi</a>
+          <a href="index.html#solutions">Soluzioni</a>
+          <a href="index.html#contacts">Contatti</a>
+        </div>
+
+        <!-- Language Links -->
+        <div class="language-links">
+          <a href="it-consulting.html" >EN</a>
+          <a href="it-consulting-it.html" style="color: var(--accent-color);" >IT</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="service-detail-hero" 
+           style="background: url('images/software-dev-hero.jpg') center center / cover no-repeat fixed;">
+    <div class="overlay"></div>
+    <div class="service-hero-content">
+      <h1 class="service-title">Sviluppo Software</h1>
+      <p class="service-subtitle">
+        Software su misura, sistemi di gestione e automazione dei processi.
+      </p>
+    </div>
+  </section>
+
+  <!-- Service Detail -->
+  <section class="service-detail">
+    <div class="service-detail-container">
+      <a href="index.html#services" class="back-button">&larr; Tutti i Servizi</a>
+      <h2>Sviluppo Software</h2>
+      <p class="service-description">
+        Realizziamo soluzioni software personalizzate per ogni esigenza di business:
+        dalle piattaforme di gestione aziendale ad applicazioni specializzate. Il nostro team
+        si occupa di progettazione del sistema, programmazione (C#, Java, Python),
+        integrazione di database, API e manutenzione a lungo termine.
+      </p>
+      <div class="service-details">
+        <h3>Cosa Offriamo</h3>
+        <p>
+          Che tu abbia bisogno di uno strumento interno o di un prodotto su larga scala
+          per i tuoi clienti, ci concentriamo su scalabilità, prestazioni e un’interfaccia
+          intuitiva. Ci occupiamo di test QA, distribuzione e supporto continuo,
+          facendo crescere il tuo software insieme al tuo business.
+        </p>
+        <a href="index.html#contact" class="cta-button">Contattaci</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Neutire. Tutti i diritti riservati.</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Software Development | Neutire</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index-en.html" class="logo">NEUTIRE</a>
+
+      <!-- Hamburger Icon -->
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Combined Navigation Links -->
+      <div class="nav-links">
+        <!-- Main Links -->
+        <div class="main-links">
+          <a href="index-en.html#home">Home</a>
+          <a href="index-en.html#services">Services</a>
+          <a href="index-en.html#solutions">Solutions</a>
+          <a href="index-en.html#contacts">Contacts</a>
+        </div>
+
+        <!-- Language Links -->
+        <div class="language-links">
+          <a href="it-consulting.html" style="color: var(--accent-color);" >EN</a>
+          <a href="it-consulting-it.html" >IT</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="service-detail-hero" 
+           style="background: url('images/software-dev-hero.jpg') center center / cover no-repeat fixed;">
+    <div class="overlay"></div>
+    <div class="service-hero-content">
+      <h1 class="service-title">Software Development</h1>
+      <p class="service-subtitle">
+        Bespoke software, management systems, and process automation.
+      </p>
+    </div>
+  </section>
+
+  <!-- Service Detail -->
+  <section class="service-detail">
+    <div class="service-detail-container">
+      <a href="index-en.html#services" class="back-button">&larr; All Services</a>
+      <h2>Software Development</h2>
+      <p class="service-description">
+        We develop custom software solutions for any business need—from enterprise management 
+        platforms to specialized applications. Our team covers system design, coding (C#, Java, Python), 
+        database integration, APIs, and long-term maintenance.
+      </p>
+      <div class="service-details">
+        <h3>What We Offer</h3>
+        <p>
+          Whether you need an internal tool or a large-scale product for external clients, 
+          we focus on scalability, performance, and a user-friendly interface. 
+          We handle QA testing, deployment, and ongoing support to help your software 
+          grow alongside your business.
+        </p>
+        <a href="index-en.html#contact" class="cta-button">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Neutire. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sviluppo Web | Neutire</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">NEUTIRE</a>
+
+      <!-- Hamburger Icon -->
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Combined Navigation Links -->
+      <div class="nav-links">
+        <!-- Main Links -->
+        <div class="main-links">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#services">Servizi</a>
+          <a href="index.html#solutions">Soluzioni</a>
+          <a href="index.html#contacts">Contatti</a>
+        </div>
+
+        <!-- Language Links -->
+        <div class="language-links">
+          <a href="web-development.html"  >EN</a>
+          <a href="web-development-it.html" style="color: var(--accent-color);">IT</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="service-detail-hero" 
+           style="background: url('images/web-hero.jpg') center center / cover no-repeat fixed;">
+    <div class="overlay"></div>
+    <div class="service-hero-content">
+      <h1 class="service-title">Sviluppo Web</h1>
+      <p class="service-subtitle">
+        Siti personalizzati con design moderno, scalabilità e prestazioni robuste.
+      </p>
+    </div>
+  </section>
+
+  <!-- Service Detail -->
+  <section class="service-detail">
+    <div class="service-detail-container">
+      <a href="index.html#services" class="back-button">&larr; Tutti i Servizi</a>
+      <h2>Sviluppo Web</h2>
+      <p class="service-description">
+        Creiamo siti web responsive e ottimizzati per i motori di ricerca, utilizzando
+        tecnologie moderne come HTML5, CSS3, JavaScript (ES6+) e framework come
+        React, Angular e Vue.js. Per il backend lavoriamo con Node.js, Python (Django/Flask)
+        e PHP (Laravel).
+      </p>
+      <div class="service-details">
+        <h3>Cosa Offriamo</h3>
+        <p>
+          Applichiamo best practice per l’ottimizzazione delle prestazioni, la progettazione
+          di database (MySQL, MongoDB) e il deployment su piattaforme cloud come AWS, Azure
+          e Google Cloud. Le nostre pipeline DevOps includono CI/CD automatizzato
+          con GitHub Actions e Jenkins.
+        </p>
+        <a href="index.html#contact" class="cta-button">Contattaci</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Neutire. Tutti i diritti riservati.</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Development | Neutire</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index-en.html" class="logo">NEUTIRE</a>
+
+      <!-- Hamburger Icon -->
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Combined Navigation Links -->
+      <div class="nav-links">
+        <!-- Main Links -->
+        <div class="main-links">
+          <a href="index-en.html#home">Home</a>
+          <a href="index-en.html#services">Services</a>
+          <a href="index-en.html#solutions">Solutions</a>
+          <a href="index-en.html#contacts">Contacts</a>
+        </div>
+
+        <!-- Language Links -->
+        <div class="language-links">
+          <a href="web-development.html"  style="color: var(--accent-color);" >EN</a>
+          <a href="web-development-it.html" >IT</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="service-detail-hero" 
+           style="background: url('images/web-hero.jpg') center center / cover no-repeat fixed;">
+    <div class="overlay"></div>
+    <div class="service-hero-content">
+      <h1 class="service-title">Web Development</h1>
+      <p class="service-subtitle">
+        Custom websites with modern design, scalability, and robust performance.
+      </p>
+    </div>
+  </section>
+
+  <!-- Service Detail -->
+  <section class="service-detail">
+    <div class="service-detail-container">
+      <a href="index-en.html#services" class="back-button">&larr; All Services</a>
+      <h2>Web Development</h2>
+      <p class="service-description">
+        We create responsive, SEO-friendly websites using modern technologies such as 
+        HTML5, CSS3, JavaScript (ES6+), and frameworks like React, Angular, and Vue.js. 
+        On the backend, we work with Node.js, Python (Django/Flask), and PHP (Laravel).
+      </p>
+      <div class="service-details">
+        <h3>What We Offer</h3>
+        <p>
+          We implement best practices for performance optimization, database design (MySQL, MongoDB),
+          and deploy on cloud platforms like AWS, Azure, Google Cloud. Our DevOps includes automated 
+          CI/CD pipelines with GitHub Actions and Jenkins.
+        </p>
+        <a href="index-en.html#contact" class="cta-button">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Neutire. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
+
+// contentLoader.js
+
+// CARICAMENTO TESTIMONIALS
+fetch('content/testimonials.json')
+  .then(response => response.json())
+  .then(data => {
+    const container = document.getElementById('testimonials-container');
+    if (!container) return; // Se non esiste la sezione, esci
+
+    data.testimonials.forEach(testimonial => {
+      container.innerHTML += `
+        <div class="service-card">
+          <p>"${testimonial.quote}"</p>
+          <h4>— ${testimonial.author}</h4>
+        </div>
+      `;
+    });
+  });
+
+// CARICAMENTO SERVICES
+fetch('content/services.json')
+  .then(response => response.json())
+  .then(data => {
+    const container = document.getElementById('services-container');
+    if (!container) return;
+
+    data.services.forEach(service => {
+      const showButton = service.slug && service.details;
+      container.innerHTML += `
+        <div class="service-card">
+          <h3>${service.title}</h3>
+          <p>${service.description}</p>
+          ${
+            showButton
+              ? `<a href="services.html#${service.slug}" class="cta-button">Learn More</a>`
+              : ''
+          }
+        </div>
+      `;
+    });
+  });
+
+
+// CAROUSEL
+const track = document.querySelector('.carousel-track');
+const prevBtn = document.querySelector('.carousel-btn.prev');
+const nextBtn = document.querySelector('.carousel-btn.next');
+if (track && prevBtn && nextBtn) {
+  const cards = Array.from(document.querySelectorAll('.solution-card'));
+
+  let currentIndex = 0;
+  const cardWidth = cards[0].getBoundingClientRect().width;
+  const totalCards = cards.length;
+
+  // Posiziona le card
+  cards.forEach((card, index) => {
+    card.style.left = `${index * cardWidth}px`;
+  });
+
+  function moveToSlide(index) {
+    track.style.transform = `translateX(-${index * cardWidth}px)`;
+  }
+
+  // Next
+  nextBtn.addEventListener('click', () => {
+    if (currentIndex < totalCards - 1) {
+      currentIndex++;
+      moveToSlide(currentIndex);
+    }
+  });
+
+  // Prev
+  prevBtn.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      moveToSlide(currentIndex);
+    }
+  });
+}
+
+// main.js
+
+// Apri/chiudi menu hamburger
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+}
+
+// Smooth scrolling per gli anchor links (sulla stessa pagina)
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  // Evita errore se il link non appartiene alla stessa pagina
+  if (anchor.pathname === window.location.pathname) {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      if (targetId && targetId !== '#') {
+        document.querySelector(targetId).scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+      // Chiudi il menu se aperto (solo su mobile)
+      navLinks.classList.remove('show');
+    });
+  }
+});
+
+// Gestione form
+const contactForm = document.querySelector('.contact-form');
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert('Message sent successfully!');
+    contactForm.submit();
+  });
+}
+
+// Typewriter Effect
+document.addEventListener("DOMContentLoaded", function() {
+  const line1 = "Fai crescere il tuo business con noi";
+  const speed = 100; // Typing speed in ms
+  const element1 = document.getElementById("typeLine1");
+  
+  function typeWriter(text, element, speed) {
+    return new Promise(resolve => {
+      let i = 0;
+      element.innerHTML = "";
+      function type() {
+        if (i < text.length) {
+          element.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(type, speed);
+        } else {
+          resolve();
+        }
+      }
+      type();
+    });
+  }
+  
+  // Animate lines sequentially
+  typeWriter(line1, element1, speed)
+    .then(() => typeWriter(line2, element2, speed))
+    .then(() => {
+      // Add final carets
+      element1.classList.add("typewriter");
+    });
+});
+
+// Typewriter Effect
+document.addEventListener("DOMContentLoaded", function() {
+  const line2 = "Upgrade your business with us";
+  const speed = 100; // Typing speed in ms
+  const element1 = document.getElementById("typeLine2");
+  
+  function typeWriter(text, element, speed) {
+    return new Promise(resolve => {
+      let i = 0;
+      element.innerHTML = "";
+      function type() {
+        if (i < text.length) {
+          element.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(type, speed);
+        } else {
+          resolve();
+        }
+      }
+      type();
+    });
+  }
+  
+  // Animate lines sequentially
+  typeWriter(line2, element1, speed)
+    .then(() => typeWriter(line2, element2, speed))
+    .then(() => {
+      // Add final carets
+      element1.classList.add("typewriter");
+    });
+});
+
+// Update the mobile menu toggle to handle the new structure
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+      menuToggle.classList.toggle('active');
+    });
+
+    // Close menu when clicking outside on mobile
+    document.addEventListener('click', (e) => {
+      if (window.innerWidth <= 768 && 
+          !e.target.closest('.nav-container') && 
+          navLinks.classList.contains('show')) {
+        navLinks.classList.remove('show');
+        menuToggle.classList.remove('active');
+      }
+    });
+
+    // Close menu after clicking a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+          navLinks.classList.remove('show');
+          menuToggle.classList.remove('active');
+        }
+      });
+    });
+  }
+});
+
+function revealSections() {
+  const sections = document.querySelectorAll('.hidden');
+  sections.forEach(section => {
+    const rect = section.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom >= 0) {
+      section.classList.remove('hidden');
+      section.classList.add('animate__animated', 'animate__fadeInUp'); // Aggiungi le classi Animate.css
+    }
+  });
+}
+
+window.addEventListener('scroll', revealSections);
+revealSections(); // Inizializza all'apertura della pagina
