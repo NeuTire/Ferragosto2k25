@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="UTF-8" />
   <!-- Ensure responsive behavior on mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Neutire | Tech Solutions & Innovation</title>
+  <title>Neutire, Soluzioni Tecnologiche & Innovazione</title>
   
   <!-- Main CSS -->
   <link rel="stylesheet" href="styles/main.css" />
@@ -12,24 +12,25 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link 
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap"
+  />
+  
   <!-- Animate.css (Optional) -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap"
-    rel="stylesheet"
   />
 </head>
 <body>
   <!-- tsParticles container -->
   <div id="tsparticles"></div>
 
-  <!-- Navbar -->
+  <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-container">
-      <a href="index-en.html" class="logo">NEUTIRE</a>
+      <a href="index.html" class="logo">NEUTIRE</a>
 
       <!-- Hamburger Icon -->
       <button class="menu-toggle" aria-label="Toggle menu">
@@ -38,20 +39,17 @@
         <span class="bar"></span>
       </button>
 
-      <!-- Combined Navigation Links -->
+      <!-- Navigation Links -->
       <div class="nav-links">
-        <!-- Main Links -->
         <div class="main-links">
           <a href="#home">Home</a>
-          <a href="#services">Services</a>
-          <a href="#solutions">Solutions</a>
-          <a href="#contact">Contacts</a>
+          <a href="#services">Servizi</a>
+          <a href="#solutions">Soluzioni</a>
+          <a href="#contact">Contatti</a>
         </div>
-
-        <!-- Language Links -->
         <div class="language-links">
-          <a href="index-en.html" style="color: var(--accent-color);">EN</a>
-          <a href="index.html">IT</a>
+          <a href="index-en.html">EN</a>
+          <a href="index.html" style="color: var(--accent-color);">IT</a>
         </div>
       </div>
     </div>
@@ -59,74 +57,58 @@
 
   <!-- Hero Section -->
   <section id="home" class="hero parallax-hero">
-    <!-- Dark overlay -->
     <div class="overlay"></div>
     <div class="hero-content">
-      <h1 class="typewriter" id="typeLine2"></h1>
-      <h1><span>Custom AI Solutions for Real Problems</span></h1>
-      <p>Expertise in IT consulting, app development, website development, and cutting-edge AI.</p>
+      <h1 class="typewriter" id="typeLine1"></h1>
+      <h1><span>Soluzioni di IA personalizzate per problemi reali</span></h1>
+      <p>Esperti in consulenza IT, sviluppo di app, sviluppo di siti web e IA all'avanguardia.</p>
       <br>
-      <a href="#contact" class="cta-button">Schedule a Consultation</a>
+      <a href="#contact" class="cta-button">Richiedi una consulenza</a>
     </div>
   </section>
 
   <!-- Services Section -->
   <section id="services" class="services hidden">
-    <h2 class="section-title">Our Services</h2>
+    <h2 class="section-title">I nostri Servizi</h2>
     <div class="services-grid">
-      <!-- 1) IT Consulting -->
+      <!-- Service Cards -->
       <div class="service-card">
-        <h3>IT Consulting</h3>
-        <p>Strategic technology planning and enterprise solutions.</p>
-        <a href="it-consulting.html" class="cta-button">Learn More</a>
+        <h3>Consulenza IT</h3>
+        <p>Pianificazione strategica delle tecnologie e soluzioni enterprise.</p>
+        <a href="it-consulting-it.html" class="cta-button">Scopri di più</a>
       </div>
-      
-      <!-- 2) Android App Development -->
       <div class="service-card">
-        <h3>Android App Development</h3>
-        <p>Native and cross-platform mobile applications with seamless performance.</p>
-        <a href="android-apps.html" class="cta-button">Learn More</a>
+        <h3>Sviluppo App Android</h3>
+        <p>Applicazioni native e multipiattaforma ad alte prestazioni.</p>
+        <a href="android-apps-it.html" class="cta-button">Scopri di più</a>
       </div>
-      
-      <!-- 3) Web Development -->
       <div class="service-card">
-        <h3>Web Development</h3>
-        <p>Custom websites with modern design, scalability, and robust performance.</p>
-        <a href="web-development.html" class="cta-button">Learn More</a>
+        <h3>Sviluppo Web</h3>
+        <p>Siti personalizzati con design moderno, scalabilità e prestazioni robuste.</p>
+        <a href="web-development-it.html" class="cta-button">Scopri di più</a>
       </div>
-
-      <!-- 4) AI Solutions -->
       <div class="service-card">
-        <h3>AI Solutions</h3>
-        <p>Machine learning models, automation systems, and advanced data analytics.</p>
-        <a href="ai-solutions.html" class="cta-button">Learn More</a>
+        <h3>Soluzioni di IA</h3>
+        <p>Modelli di machine learning, sistemi di automazione e analisi avanzate.</p>
+        <a href="ai-solutions-it.html" class="cta-button">Scopri di più</a>
       </div>
-
-      <!-- 5) Software Development -->
       <div class="service-card">
-        <h3>Software Development</h3>
-        <p>Bespoke software, management systems, and process automation.</p>
-        <a href="software-development.html" class="cta-button">Learn More</a>
+        <h3>Sviluppo Software</h3>
+        <p>Software su misura, sistemi di gestione e automazione dei processi.</p>
+        <a href="software-development-it.html" class="cta-button">Scopri di più</a>
       </div>
     </div>
   </section>
 
   <!-- Solutions Section -->
   <section id="solutions" class="solutions hidden">
-    <h2 class="section-title">Our Solutions</h2>
+    <h2 class="section-title">Le nostre Soluzioni</h2>
     <div class="carousel-container">
       <div class="carousel-track">
-        <!-- Example single card -->
         <div class="solution-card">
           <h3>Workshop WB025</h3>
-          <p>A website for an international workshop.</p>
-          <a 
-            href="https://timeassassinrg.github.io/WorkShop_CIS_GROUP/" 
-            target="_blank" 
-            class="cta-button"
-          >
-            Visit Solution
-          </a>
+          <p>Un sito web per un workshop internazionale.</p>
+          <a href="https://timeassassinrg.github.io/WorkShop_CIS_GROUP/" target="_blank" class="cta-button">Visita la soluzione</a>
         </div>
       </div>
     </div>
@@ -137,53 +119,35 @@
   </section>
 
   <!-- Contact Section -->
-  <!-- Fixed the ID and class here -->
   <section id="contact" class="hidden">
     <div class="contact-bg">
-      <h2 class="section-title">Let’s Build Something Great Together</h2>
+      <h2 class="section-title">Costruiamo Qualcosa di Straordinario Insieme</h2>
       <div class="contact-wrapper">
-        <!-- Left Column: Contact Info -->
         <div class="contact-info">
-          <h3>We’re Excited to Hear from You!</h3>
-          <p>
-            Got an idea, a project, or just curious about how we can help?
-            Whether you have a big vision or a small question, we’d love to
-            chat and explore how we can bring value to your business.
-          </p>
-          <p>Drop us a message, and let's start turning your ideas into reality.</p>
+          <h3>Siamo Felici di Conoscerti!</h3>
+          <p>Hai un’idea, un progetto o semplicemente una curiosità su come possiamo aiutarti? Che si tratti di una grande visione o di una semplice domanda, siamo qui per ascoltarti e capire come possiamo aggiungere valore al tuo business.</p>
+          <p>Scrivici un messaggio e iniziamo a trasformare le tue idee in realtà.</p>
           <div class="info-item">
-            <strong>Email us at:</strong> 
+            <strong>Email:</strong> 
             <a href="mailto:alessio.mezzina@phd.unict.it">alessio.mezzina@phd.unict.it</a>
           </div>
           <div class="info-item">
-            <strong>Call or WhatsApp:</strong> 
+            <strong>Telefono o WhatsApp:</strong> 
             <a href="tel:+393332040976">+39 333 204 0976</a>
           </div>
         </div>
-
-        <!-- Right Column: Form -->
         <div class="contact-form-wrapper">
-          <form
-            class="contact-form"
-            action="https://formspree.io/f/xzzdgglb"
-            method="POST"
-            enctype="multipart/form-data"
-          >
+          <form class="contact-form" action="https://formspree.io/f/xzzdgglb" method="POST" enctype="multipart/form-data">
             <label>
-              <input type="text" name="name" placeholder="Name" required />
+              <input type="text" name="name" placeholder="Nome" required />
             </label>
             <label>
               <input type="email" name="email" placeholder="Email" required />
             </label>
             <label>
-              <textarea
-                name="message"
-                placeholder="Your Message"
-                rows="5"
-                required
-              ></textarea>
+              <textarea name="message" placeholder="Il tuo messaggio" rows="5" required></textarea>
             </label>
-            <button type="submit">Send Message</button>
+            <button type="submit">Invia Messaggio</button>
           </form>
         </div>
       </div>
@@ -192,76 +156,43 @@
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Neutire. All rights reserved.</p>
+    <p>&copy; 2025 Neutire. Tutti i diritti riservati.</p>
   </footer>
 
-  <!-- SCRIPTS -->
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
   <script src="scripts/contentLoader.js"></script>
   <script src="scripts/main.js"></script>
-
-  <!-- tsParticles init -->
   <script>
+    // tsParticles initialization
     tsParticles.load("tsparticles", {
-      fullScreen: {
-        enable: true,
-        zIndex: -999
-      },
+      fullScreen: { enable: true, zIndex: -999 },
       fpsLimit: 60,
       particles: {
-        number: {
-          value: 30,
-          density: {
-            enable: true,
-            area: 800
-          }
-        },
-        color: {
-          value: ["#00C9A7"]
-        },
-        shape: {
-          type: "circle"
-        },
-        opacity: {
-          value: 0.8,
-          random: true
-        },
-        size: {
-          value: { min: 3, max: 7 },
-          random: true
-        },
+        number: { value: 30, density: { enable: true, area: 800 } },
+        color: { value: ["#00C9A7"] },
+        shape: { type: "circle" },
+        opacity: { value: 0.8, random: true },
+        size: { value: { min: 3, max: 7 }, random: true },
         move: {
           enable: true,
           speed: 2,
           direction: "none",
           random: true,
           straight: false,
-          outModes: {
-            default: "out"
-          }
+          outModes: { default: "out" }
         }
       },
       interactivity: {
         detectsOn: "canvas",
         events: {
-          onHover: {
-            enable: true,
-            mode: "repulse"
-          },
-          onClick: {
-            enable: true,
-            mode: "push"
-          },
+          onHover: { enable: true, mode: "repulse" },
+          onClick: { enable: true, mode: "push" },
           resize: true
         },
         modes: {
-          repulse: {
-            distance: 100,
-            duration: 0.4
-          },
-          push: {
-            quantity: 4
-          }
+          repulse: { distance: 100, duration: 0.4 },
+          push: { quantity: 4 }
         }
       },
       detectRetina: true

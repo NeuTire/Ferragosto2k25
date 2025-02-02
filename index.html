@@ -39,17 +39,14 @@
         <span class="bar"></span>
       </button>
 
-      <!-- Combined Navigation Links -->
+      <!-- Navigation Links -->
       <div class="nav-links">
-        <!-- Main Links -->
         <div class="main-links">
           <a href="#home">Home</a>
           <a href="#services">Servizi</a>
           <a href="#solutions">Soluzioni</a>
           <a href="#contact">Contatti</a>
         </div>
-
-        <!-- Language Links -->
         <div class="language-links">
           <a href="index-en.html">EN</a>
           <a href="index.html" style="color: var(--accent-color);">IT</a>
@@ -60,7 +57,6 @@
 
   <!-- Hero Section -->
   <section id="home" class="hero parallax-hero">
-    <!-- Dark overlay -->
     <div class="overlay"></div>
     <div class="hero-content">
       <h1 class="typewriter" id="typeLine1"></h1>
@@ -75,35 +71,27 @@
   <section id="services" class="services hidden">
     <h2 class="section-title">I nostri Servizi</h2>
     <div class="services-grid">
-      <!-- 1) IT Consulting -->
+      <!-- Service Cards -->
       <div class="service-card">
         <h3>Consulenza IT</h3>
         <p>Pianificazione strategica delle tecnologie e soluzioni enterprise.</p>
         <a href="it-consulting-it.html" class="cta-button">Scopri di più</a>
       </div>
-      
-      <!-- 2) Android App Development -->
       <div class="service-card">
         <h3>Sviluppo App Android</h3>
         <p>Applicazioni native e multipiattaforma ad alte prestazioni.</p>
         <a href="android-apps-it.html" class="cta-button">Scopri di più</a>
       </div>
-      
-      <!-- 3) Web Development -->
       <div class="service-card">
         <h3>Sviluppo Web</h3>
         <p>Siti personalizzati con design moderno, scalabilità e prestazioni robuste.</p>
         <a href="web-development-it.html" class="cta-button">Scopri di più</a>
       </div>
-
-      <!-- 4) AI Solutions -->
       <div class="service-card">
         <h3>Soluzioni di IA</h3>
         <p>Modelli di machine learning, sistemi di automazione e analisi avanzate.</p>
         <a href="ai-solutions-it.html" class="cta-button">Scopri di più</a>
       </div>
-
-      <!-- 5) Software Development -->
       <div class="service-card">
         <h3>Sviluppo Software</h3>
         <p>Software su misura, sistemi di gestione e automazione dei processi.</p>
@@ -120,13 +108,7 @@
         <div class="solution-card">
           <h3>Workshop WB025</h3>
           <p>Un sito web per un workshop internazionale.</p>
-          <a 
-            href="https://timeassassinrg.github.io/WorkShop_CIS_GROUP/" 
-            target="_blank" 
-            class="cta-button"
-          >
-            Visita la soluzione
-          </a>
+          <a href="https://timeassassinrg.github.io/WorkShop_CIS_GROUP/" target="_blank" class="cta-button">Visita la soluzione</a>
         </div>
       </div>
     </div>
@@ -141,38 +123,21 @@
     <div class="contact-bg">
       <h2 class="section-title">Costruiamo Qualcosa di Straordinario Insieme</h2>
       <div class="contact-wrapper">
-        <!-- Left Column: Contact Info -->
         <div class="contact-info">
           <h3>Siamo Felici di Conoscerti!</h3>
-          <p>
-            Hai un’idea, un progetto o semplicemente una curiosità su come 
-            possiamo aiutarti? Che si tratti di una grande visione o di una 
-            semplice domanda, siamo qui per ascoltarti e capire come possiamo 
-            aggiungere valore al tuo business.
-          </p>
-          <p>
-            Scrivici un messaggio e iniziamo a trasformare le tue idee in realtà.
-          </p>
+          <p>Hai un’idea, un progetto o semplicemente una curiosità su come possiamo aiutarti? Che si tratti di una grande visione o di una semplice domanda, siamo qui per ascoltarti e capire come possiamo aggiungere valore al tuo business.</p>
+          <p>Scrivici un messaggio e iniziamo a trasformare le tue idee in realtà.</p>
           <div class="info-item">
             <strong>Email:</strong> 
-            <a href="mailto:alessio.mezzina@phd.unict.it">
-              alessio.mezzina@phd.unict.it
-            </a>
+            <a href="mailto:alessio.mezzina@phd.unict.it">alessio.mezzina@phd.unict.it</a>
           </div>
           <div class="info-item">
             <strong>Telefono o WhatsApp:</strong> 
             <a href="tel:+393332040976">+39 333 204 0976</a>
           </div>
         </div>
-
-        <!-- Right Column: Form -->
         <div class="contact-form-wrapper">
-          <form
-            class="contact-form"
-            action="https://formspree.io/f/xzzdgglb"
-            method="POST"
-            enctype="multipart/form-data"
-          >
+          <form class="contact-form" action="https://formspree.io/f/xzzdgglb" method="POST" enctype="multipart/form-data">
             <label>
               <input type="text" name="name" placeholder="Nome" required />
             </label>
@@ -180,12 +145,7 @@
               <input type="email" name="email" placeholder="Email" required />
             </label>
             <label>
-              <textarea
-                name="message"
-                placeholder="Il tuo messaggio"
-                rows="5"
-                required
-              ></textarea>
+              <textarea name="message" placeholder="Il tuo messaggio" rows="5" required></textarea>
             </label>
             <button type="submit">Invia Messaggio</button>
           </form>
@@ -199,73 +159,40 @@
     <p>&copy; 2025 Neutire. Tutti i diritti riservati.</p>
   </footer>
 
-  <!-- SCRIPTS -->
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
   <script src="scripts/contentLoader.js"></script>
   <script src="scripts/main.js"></script>
-
-  <!-- tsParticles init -->
   <script>
+    // tsParticles initialization
     tsParticles.load("tsparticles", {
-      fullScreen: {
-        enable: true,
-        zIndex: -999
-      },
+      fullScreen: { enable: true, zIndex: -999 },
       fpsLimit: 60,
       particles: {
-        number: {
-          value: 30,
-          density: {
-            enable: true,
-            area: 800
-          }
-        },
-        color: {
-          value: ["#00C9A7"]
-        },
-        shape: {
-          type: "circle"
-        },
-        opacity: {
-          value: 0.8,
-          random: true
-        },
-        size: {
-          value: { min: 3, max: 7 },
-          random: true
-        },
+        number: { value: 30, density: { enable: true, area: 800 } },
+        color: { value: ["#00C9A7"] },
+        shape: { type: "circle" },
+        opacity: { value: 0.8, random: true },
+        size: { value: { min: 3, max: 7 }, random: true },
         move: {
           enable: true,
           speed: 2,
           direction: "none",
           random: true,
           straight: false,
-          outModes: {
-            default: "out"
-          }
+          outModes: { default: "out" }
         }
       },
       interactivity: {
         detectsOn: "canvas",
         events: {
-          onHover: {
-            enable: true,
-            mode: "repulse"
-          },
-          onClick: {
-            enable: true,
-            mode: "push"
-          },
+          onHover: { enable: true, mode: "repulse" },
+          onClick: { enable: true, mode: "push" },
           resize: true
         },
         modes: {
-          repulse: {
-            distance: 100,
-            duration: 0.4
-          },
-          push: {
-            quantity: 4
-          }
+          repulse: { distance: 100, duration: 0.4 },
+          push: { quantity: 4 }
         }
       },
       detectRetina: true

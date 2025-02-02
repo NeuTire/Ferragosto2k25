@@ -376,7 +376,7 @@ footer {
   50% { opacity: 0; }
 }
 
-/* MEDIA QUERIES (Mobile) */
+/* MOBILE MEDIA QUERY */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
