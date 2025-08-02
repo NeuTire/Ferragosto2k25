@@ -1,247 +1,672 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Neutire | Soluzioni Tecnologiche & Innovazione</title>
-
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="styles/main.css" />
-
-  <!-- Google Fonts + Animate.css -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link 
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" 
-    rel="stylesheet" 
-  />
-  <link 
-    rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferragosto 2025 - Villa Mezzina</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- tsParticles Background -->
-  <div id="tsparticles"></div>
-
-  <!-- NAVIGATION -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="logo">NEUTIRE</a>
-
-      <!-- Hamburger Icon -->
-      <button class="menu-toggle" aria-label="Toggle menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-
-      <div class="nav-links">
-        <!-- Main Links -->
-        <div class="main-links">
-          <a href="#home">Home</a>
-          <a href="#services">Servizi</a>
-          <a href="#solutions">Soluzioni</a>
-          <a href="#contact">Contatti</a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-umbrella-beach"></i> Ferragosto 2025
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#programma">Programma</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#venue">Venue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#staff">Staff</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menù</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contatti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white ms-2 px-3" href="#contact">Prenota</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <!-- Language Links -->
-        <div class="language-links">
-          <a href="index-en.html">EN</a>
-          <a href="index.html" style="color: var(--accent-color);">IT</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <div class="hero-content fade-up">
+                        <h1 class="hero-title">🎉 Ferragosto 2025</h1>
+                        <h2 class="hero-subtitle">Villa Mezzina</h2>
+                        <p class="hero-description">
+                            Un'esperienza indimenticabile tra relax in spiaggia, grigliata al tramonto e pool party sotto le stelle. 
+                            Vieni a celebrare il Ferragosto più bello della tua vita!
+                        </p>
+                        <div class="hero-date">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>15 Agosto 2025 - dalle 16:00</span>
+                        </div>
+                        <div class="hero-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Villa Mezzina, Sicilia</span>
+                        </div>
+                        <a href="#contact" class="btn btn-hero btn-lg mt-4">
+                            <i class="fas fa-ticket-alt"></i> <span>Prenota Ora</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- HERO SECTION -->
-  <section id="home" class="hero parallax-hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <!-- Typewriter line (Italian) -->
-      <h1 class="typewriter" id="typeLine1"></h1>
-      <h1><span style="color:aquamarine">Soluzioni di IA personalizzate per problemi reali</span></h1>
-      <p>Esperti in consulenza IT, sviluppo di app, sviluppo di siti web e IA all'avanguardia.</p>
-      <br>
-      <a href="#contact" class="cta-button">Richiedi una consulenza</a>
-    </div>
-  </section>
-
-  <!-- SERVICES SECTION -->
-  <section id="services" class="services hidden">
-    <h2 class="section-title">I nostri Servizi</h2>
-    <div class="services-grid">
-      <!-- 1) IT Consulting -->
-      <div class="service-card">
-        <h3>Consulenza IT</h3>
-        <p>Pianificazione strategica delle tecnologie e soluzioni enterprise.</p>
-        <a href="it-consulting-it.html" class="cta-button">Scopri di più</a>
-      </div>
-      <!-- 2) Android App Development -->
-      <div class="service-card">
-        <h3>Sviluppo App Android</h3>
-        <p>Applicazioni native e multipiattaforma ad alte prestazioni.</p>
-        <a href="android-apps-it.html" class="cta-button">Scopri di più</a>
-      </div>
-      <!-- 3) Web Development -->
-      <div class="service-card">
-        <h3>Sviluppo Web</h3>
-        <p>Siti personalizzati con design moderno, scalabilità e prestazioni robuste.</p>
-        <a href="web-development-it.html" class="cta-button">Scopri di più</a>
-      </div>
-      <!-- 4) AI Solutions -->
-      <div class="service-card">
-        <h3>Soluzioni di IA</h3>
-        <p>Modelli di machine learning, sistemi di automazione e analisi avanzate.</p>
-        <a href="ai-solutions-it.html" class="cta-button">Scopri di più</a>
-      </div>
-      <!-- 5) Software Development -->
-      <div class="service-card">
-        <h3>Sviluppo Software</h3>
-        <p>Software su misura, sistemi di gestione e automazione dei processi.</p>
-        <a href="software-development-it.html" class="cta-button">Scopri di più</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- SOLUTIONS SECTION -->
-  <section id="solutions" class="solutions hidden">
-    <h2 class="section-title">Le nostre Soluzioni</h2>
-    <div class="carousel-container">
-      <div class="carousel-track">
-        <div class="solution-card">
-          <h3>Workshop WB025</h3>
-          <p>Un sito web per un workshop internazionale.</p>
-          <a 
-            href="https://www.ants-lab.it/wbo2025/" 
-            target="_blank" 
-            class="cta-button"
-          >
-            Visita la soluzione
-          </a>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
         </div>
-        <!-- Add more .solution-card if needed -->
-      </div>
-    </div>
-    <div class="carousel-nav">
-      <button class="carousel-btn prev">Prev</button>
-      <button class="carousel-btn next">Next</button>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTACT SECTION (fixed ID) -->
-  <section id="contact" class="hidden">
-    <div class="contact-bg">
-      <h2 class="section-title">Costruiamo Qualcosa di Straordinario Insieme</h2>
-      <div class="contact-wrapper">
-        <!-- Contact Info -->
-        <div class="contact-info">
-          <h3>Siamo Felici di Conoscerti!</h3>
-          <p>
-            Hai un’idea, un progetto o semplicemente una curiosità su come possiamo aiutarti?
-            Che si tratti di una grande visione o di una semplice domanda, siamo qui per ascoltarti
-            e capire come possiamo aggiungere valore al tuo business.
-          </p>
-          <p>Scrivici un messaggio e iniziamo a trasformare le tue idee in realtà.</p>
-          <div class="info-item">
-            <strong>Email:</strong> 
-            <a href="mailto:alessio.mezzina@phd.unict.it">alessio.mezzina@phd.unict.it</a>
-          </div>
-          <div class="info-item">
-            <strong>Telefono o WhatsApp:</strong>
-            <a href="tel:+393332040976">+39 333 204 0976</a>
-          </div>
+    <!-- Programma Section -->
+    <section id="programma" class="fade-up">
+        <div class="container wave-parent">
+            <h2 class="section-title">🏖️ Programma dell'Evento</h2>
+            <div class="row g-4">
+                <!-- Day 1 - Ferragosto -->
+                <div class="col-12">
+                    <div class="dark-card wave-effect">
+                        <h3 class="text-primary mb-4">
+                            <i class="fas fa-sun"></i> 15 Agosto - Ferragosto
+                        </h3>
+                        
+                        <div class="program-item">
+                            <div class="program-time">
+                                <i class="fas fa-clock"></i> 16:00 – 19:00
+                            </div>
+                            <div class="program-content">
+                                <h4>🌅 Relax & Sunset in Spiaggia</h4>
+                                <ul>
+                                    <li>Ombrelloni, coperte e drink freschi</li>
+                                    <li>Giochi da spiaggia, racchettoni e musica chill</li>
+                                    <li>Aperitivo leggero con prosecco</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="program-item">
+                            <div class="program-time">
+                                <i class="fas fa-clock"></i> 19:00 – 22:00
+                            </div>
+                            <div class="program-content">
+                                <h4>🔥 Grigliata in Giardino</h4>
+                                <ul>
+                                    <li>Griglia con carbone vegetale di quercia, tavoli decorati, lucine LED</li>
+                                    <li>Servizio con chef dedicato</li>
+                                    <li>Vino rosso del conte e Etna bianco</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="program-item">
+                            <div class="program-time">
+                                <i class="fas fa-clock"></i> 22:00 – ...
+                            </div>
+                            <div class="program-content">
+                                <h4>💦 Poolside After Party</h4>
+                                <ul>
+                                    <li>Piscina illuminata, cocktail bar</li>
+                                    <li>Lounge music & DJ set</li>
+                                    <li>Brindisi finale e bagno notturno 🌙</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 2 - Morning After -->
+                <div class="col-12">
+                    <div class="dark-card wave-effect">
+                        <h3 class="text-warning mb-4">
+                            <i class="fas fa-coffee"></i> 16 Agosto - Il Giorno Dopo
+                        </h3>
+                        
+                        <div class="program-item">
+                            <div class="program-time">
+                                <i class="fas fa-clock"></i> 09:00 – 11:00
+                            </div>
+                            <div class="program-content">
+                                <h4>☀️ Colazione Rigenerante</h4>
+                                <ul>
+                                    <li>Cornetti freschi e brioche siciliane</li>
+                                    <li>Caffè espresso e cappuccino</li>
+                                    <li>Spremute d'arancia fresche</li>
+                                    <li>Frutta di stagione e yogurt</li>
+                                    <li>Marmellate artigianali e miele</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Contact Form -->
-        <div class="contact-form-wrapper">
-          <form
-            class="contact-form"
-            action="https://formspree.io/f/xzzdgglb"
-            method="POST"
-            enctype="multipart/form-data"
-          >
-            <label>
-              <input type="text" name="name" placeholder="Nome" required />
-            </label>
-            <label>
-              <input type="email" name="email" placeholder="Email" required />
-              <textarea
-                name="message"
-                placeholder="Il tuo messaggio"
-                rows="5"
-                required
-              ></textarea>
-            </label>
-            <button type="submit">Invia Messaggio</button>
-          </form>
+        <div class="section-divider"></div>
+    </section>
+
+    <!-- Fixed Venue Section -->
+<section id="venue" class="fade-up">
+    <div class="container wave-parent">
+        <h2 class="section-title">🏖️ Villa Al Mare</h2>
+        <div class="row g-4">
+            <div class="col-lg-8">
+                <div class="dark-card wave-effect">
+                    <div id="venueCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#venueCarousel" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#venueCarousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#venueCarousel" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#venueCarousel" data-bs-slide-to="3"></button>
+                            <button type="button" data-bs-target="#venueCarousel" data-bs-slide-to="4"></button>
+                            <button type="button" data-bs-target="#venueCarousel" data-bs-slide-to="5"></button>
+                        </div>  
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="venue-image">
+                                    <img src="1.jpeg" class="d-block w-100" alt="Villa Al Mare - Vista Principale">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="venue-image">
+                                    <img src="2.jpeg" class="d-block w-100" alt="Piscina Villa Al Mare">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="venue-image">
+                                    <img src="3.jpeg" class="d-block w-100" alt="Spiaggia Privata">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="venue-image">
+                                    <img src="4.jpeg" class="d-block w-100" alt="Giardino Villa">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="venue-image">
+                                    <img src="5.jpeg" class="d-block w-100" alt="Terrazza Villa">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="venue-image">
+                                    <img src="6.jpeg" class="d-block w-100" alt="Terrazza Villa">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#venueCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#venueCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="dark-card wave-effect h-100">
+                    <h3 class="text-primary mb-4">
+                        <i class="fas fa-home"></i> La Location
+                    </h3>
+                    <div class="venue-features">
+                        <div class="feature-item">
+                            <i class="fas fa-swimming-pool"></i>
+                            <span>Piscina</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-tree"></i>
+                            <span>Giardino</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-music"></i>
+                            <span>Sistema Audio</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-fire"></i>
+                            <span>Area BBQ</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-car"></i>
+                            <span>Parcheggio Disponibile</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-wifi"></i>
+                            <span>WiFi Gratuito</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-cocktail"></i>
+                            <span>Bar Attrezzato</span>
+                        </div>
+                    </div>
+                    <div class="venue-description mt-4">
+                        <p>Villa Mezzina è una location esclusiva. Con i suoi spazi eleganti e le attrezzature moderne, offre il setting perfetto per un Ferragosto indimenticabile.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
+    <div class="section-divider"></div>
+</section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2025 Neutire. Tutti i diritti riservati.</p>
-  </footer>
+    <!-- Staff Section -->
+    <section id="staff" class="fade-up">
+        <div class="container wave-parent">
+            <h2 class="section-title">👨‍🍳 Meet the Staff</h2>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="staff-card dark-card wave-effect">
+                        <div class="staff-image">
+                            <img src="Alessio.jpeg" alt="Alessio" class="rotating-image">
+                            <div class="staff-overlay">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                        </div>
+                        <div class="staff-info">
+                            <h4>Alessio</h4>
+                            <p class="staff-role">Organizzatore e Sponsor della Pubblicità</p>
+                            <p class="staff-description">Figura chiave nell’organizzazione dell’evento e promotore della campagna pubblicitaria, si assicura che ogni dettaglio raggiunga il pubblico giusto.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="staff-card dark-card wave-effect">
+                        <div class="staff-image">
+                            <img src="Anna.jpeg" class="rotating-image">
+                            <div class="staff-overlay">
+                                <i class="fas fa-cocktail"></i>
+                            </div>
+                        </div>
+                        <div class="staff-info">
+    <h4>Anna</h4>
+    <p class="staff-role">Head Chef</p>
+    <p class="staff-description">Responsabile della cucina, Anna guiderà la preparazione dei piatti con passione e creatività, offrendo un'esperienza gastronomica impeccabile.</p>
+</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="staff-card dark-card wave-effect">
+                        <div class="staff-image">
+                            <img src="Alberto.jpeg" class="rotating-image">
+                            <div class="staff-overlay">
+                                <i class="fas fa-music"></i>
+                            </div>
+                        </div>
+                        <div class="staff-info">
+                            <h4>Alberto</h4>
+                            <p class="staff-role">Responsabile DJ Set e Head Bartender</p>
+                            <p class="staff-description">Alberto animerà la serata con la selezione musicale perfetta e vi delizierà con cocktail d’autore per ogni fase dell’evento.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="staff-card dark-card wave-effect">
+                        <div class="staff-image">
+                            <img src="Gatita2.jpeg" alt="Alessia Event Manager" class="rotating-image">
+                            <div class="staff-overlay">
+                                <i class="fas fa-clipboard-list"></i>
+                            </div>
+                        </div>
+<div class="staff-info">
+    <h4>Señorita Gatita</h4>
+    <p class="staff-role">Responsabile Intrattenimento & Mascotte</p>
+    <p class="staff-description">Nel mondo dell'intrattenimento da un anno e quattro mesi, ovvero da tutta la sua vita! Gatita porterà un tocco di eleganza felina all’evento.</p>
+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <div class="dark-card wave-effect">
+                        <h4 class="text-primary mb-3">Il Nostro Team di Servizio</h4>
+                        <p class="text-muted">
+                            Oltre al nostro staff principale, avremo a disposizione un team completo di:
+                        </p>
+                        <div class="service-team">
+                            <span class="service-badge">🍽️ Camerieri professionali</span>
+                            <span class="service-badge">🏊‍♂️ Bagnino qualificato</span>
+                            <span class="service-badge">🛡️ Addetto sicurezza</span>
+                            <span class="service-badge">🚗 Servizio parcheggiatore</span>
+                            <span class="service-badge">🧹 Staff pulizie</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-divider"></div>
+    </section>
 
-  <!-- SCRIPTS -->
-  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
-  <script src="scripts/contentLoader.js"></script>
-  <script src="scripts/main.js"></script>
+    <!-- Menu Section -->
+    <section id="menu" class="fade-up">
+        <div class="container wave-parent">
+            <h2 class="section-title">🍖 Menù Grigliata</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="dark-card wave-effect">
+                        <h3 class="text-primary mb-4">🥗 Antipasti</h3>
+                        <ul class="menu-list">
+                            <li>Bruschette miste con salse artigianali</li>
+                            <li>Salumi selezionati (coppa, prosciutto crudo)</li>
+                            <li>Prugne e speck con riduzione di Marsala</li>
+                            <li>Formaggi tipici con miele e confetture</li>
+                            <li>Verdure grigliate e carpaccio di zucchine</li>
+                        </ul>
+                    </div>
+                </div>
 
-  <!-- tsParticles init -->
-  <script>
-    tsParticles.load("tsparticles", {
-      fullScreen: {
-        enable: true,
-        zIndex: -999
-      },
-      fpsLimit: 60,
-      particles: {
-        number: {
-          value: 30,
-          density: { enable: true, area: 800 }
-        },
-        color: { value: ["#00C9A7"] },
-        shape: { type: "circle" },
-        opacity: { value: 0.8, random: true },
-        size: {
-          value: { min: 3, max: 7 },
-          random: true
-        },
-        move: {
-          enable: true,
-          speed: 2,
-          direction: "none",
-          random: true,
-          straight: false,
-          outModes: { default: "out" }
+                <div class="col-lg-6">
+                    <div class="dark-card wave-effect">
+                        <h3 class="text-primary mb-4">🔥 Griglia (Live Cooking)</h3>
+                        <ul class="menu-list">
+                            <li>Salsicce di suino</li>
+                            <li>Spiedini misti</li>
+                            <li>Alette di pollo marinate al limone e rosmarino</li>
+                            <li>Filetto di maiale glassato al miele</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="dark-card wave-effect">
+                        <h3 class="text-primary mb-4">🥙 Contorni</h3>
+                        <ul class="menu-list">
+                            <li>Patatine chips</li>
+                            <li>Insalata estiva</li>
+                            <li>Pane casereccio e focaccia</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="dark-card wave-effect">
+                        <h3 class="text-primary mb-4">🍰 Dessert</h3>
+                        <ul class="menu-list">
+                            <li>Cheesecake al limone rinfrescante</li>
+                            <li>Anguria</li>
+                            <li>Sorbetto al limone</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="dark-card wave-effect">
+                        <h3 class="text-primary mb-4">🍷 Bevande</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="menu-list">
+                                    <li>Vino rosso e bianco</li>
+                                    <li>Birre artigianali</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="menu-list">
+                                    <li>Cocktail estivi (Mojito, Spritz, Gin tonic)</li>
+                                    <li>Acqua e bevande analcoliche</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-divider"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-up">
+        <div class="container wave-parent">
+            <h2 class="section-title">📞 Contatti & Prenotazioni</h2>
+            <div class="dark-card wave-effect">
+                <div class="row g-4">
+                    <!-- Contact Info -->
+                    <div class="col-lg-6">
+                        <h3 style="color: #ff6600;">Prenota il Tuo Posto</h3>
+                        <p class="mb-4">
+                            Hai domande sull'evento, il menu o la logistica?
+                            Contattaci utilizzando i dettagli qui sotto o inviaci un messaggio direttamente.
+                        </p>
+                        <div>
+                            <p>
+                                Per qualsiasi tipo di richiesta contatta:
+                            <ul>
+                                <li><a href="mailto:alessio.mezzina@phd.unict.it">alessio.mezzina@phd.unict.it</a></li>
+                            </ul>
+                             oppure usa il modulo qui a fianco
+                            </p>
+                        </div>
+                        <div class="mb-3">
+                            <h4 style="color: #ff6600;">Informazioni Venue</h4>
+                            <p class="mb-0">Villa Mezzina</p>
+                            <p class="mb-0">Sicilia, Italia</p>
+                            <p>Location esclusiva sul mare</p>
+                        </div>
+                        <div class="contact-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-users"></i>
+                                <span>Posti limitati</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-euro-sign"></i>
+                                <span>Prezzo su richiesta</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-parking"></i>
+                                <span>Parcheggio incluso</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact Form -->
+                    <div class="col-lg-6">
+                        <form onsubmit="sendEmail(event)" class="contact-form">
+                            <div class="mb-3">
+                                <input
+                                    type="text"
+                                    name="name"
+                                    class="form-control dark-input"
+                                    placeholder="Il Tuo Nome"
+                                    required
+                                >
+                            </div>
+                            <div class="mb-3">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    class="form-control dark-input"
+                                    placeholder="La Tua Email"
+                                    required
+                                >
+                            </div>
+                            <div class="mb-3">
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    class="form-control dark-input"
+                                    placeholder="Numero di Telefono"
+                                >
+                            </div>
+                            <div class="mb-3">
+                                <select name="guests" class="form-control dark-input" required>
+                                    <option value="">Numero di Ospiti</option>
+                                    <option value="1">1 Persona</option>
+                                    <option value="2">2 Persone</option>
+                                    <option value="3">3 Persone</option>
+                                    <option value="4">4 Persone</option>
+                                    <option value="5+">5+ Persone</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <textarea
+                                    name="message"
+                                    class="form-control dark-input"
+                                    rows="4"
+                                    placeholder="Note speciali (allergie, richieste particolari...)"
+                                ></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">
+                                <i class="fas fa-paper-plane"></i> Invia Prenotazione
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-divider"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-umbrella-beach"></i> Ferragosto 2025</h5>
+                    <p>Un'esperienza indimenticabile alla Villa Al Mare</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="mailto:alessio.mezzina@phd.unict.it"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <p class="mt-2">&copy; 2025 Villa Al Mare. Tutti i diritti riservati.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Fade up animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-up').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Venue carousel auto-play with pause on hover
+        const venueCarousel = document.getElementById('venueCarousel');
+        if (venueCarousel) {
+            const carousel = new bootstrap.Carousel(venueCarousel, {
+                interval: 4000,
+                wrap: true,
+                touch: true
+            });
+
+            // Pause on hover
+            venueCarousel.addEventListener('mouseenter', () => {
+                carousel.pause();
+            });
+
+            venueCarousel.addEventListener('mouseleave', () => {
+                carousel.cycle();
+            });
         }
-      },
-      interactivity: {
-        detectsOn: "canvas",
-        events: {
-          onHover: { enable: true, mode: "repulse" },
-          onClick: { enable: true, mode: "push" },
-          resize: true
-        },
-        modes: {
-          repulse: { distance: 100, duration: 0.4 },
-          push: { quantity: 4 }
+
+        // Staff cards staggered animation
+        const staffCards = document.querySelectorAll('.staff-card');
+        staffCards.forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.2}s`;
+        });
+
+        // Service badges animation
+        const serviceBadges = document.querySelectorAll('.service-badge');
+        serviceBadges.forEach((badge, index) => {
+            badge.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-3px) scale(1.05)';
+            });
+            
+            badge.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Email form submission
+        function sendEmail(event) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const formData = new FormData(form);
+            
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const phone = formData.get('phone') || 'Non specificato';
+            const guests = formData.get('guests');
+            const message = formData.get('message') || 'Nessuna nota speciale';
+            
+            const subject = `Prenotazione Ferragosto 2025 - ${name}`;
+            const body = `Nome: ${name}%0D%0AEmail: ${email}%0D%0ATelefono: ${phone}%0D%0ANumero Ospiti: ${guests}%0D%0A%0D%0ANote:%0D%0A${message}`;
+            
+            const mailtoLink = `mailto:alessio.mezzina@phd.unict.it?subject=${subject}&body=${body}`;
+            
+            window.location.href = mailtoLink;
+            
+            // Show success message
+            const button = form.querySelector('button[type="submit"]');
+            const originalText = button.innerHTML;
+            button.innerHTML = '<i class="fas fa-check"></i> Messaggio Inviato!';
+            button.classList.add('btn-success');
+            button.classList.remove('btn-primary');
+            
+            setTimeout(() => {
+                button.innerHTML = originalText;
+                button.classList.remove('btn-success');
+                button.classList.add('btn-primary');
+                form.reset();
+            }, 3000);
         }
-      },
-      detectRetina: true
-    }).then(container => {
-      if (container?.canvas?.element) {
-        const canvasEl = container.canvas.element;
-        canvasEl.style.transform = "translate3d(0, 0, 0)";
-        canvasEl.style.willChange = "transform";
-        canvasEl.style.position = "fixed";
-        canvasEl.style.top = "0";
-        canvasEl.style.left = "0";
-        canvasEl.style.width = "100vw";
-        canvasEl.style.height = "100vh";
-      }
-    });
-  </script>
+    </script>
 </body>
 </html>
