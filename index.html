@@ -684,6 +684,16 @@
                 form.reset();
             }, 3000);
         }
+
+        document.querySelectorAll('.navbar-collapse .nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+            const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+            if (bsCollapse && navbarCollapse.classList.contains('show')) {
+                bsCollapse.hide();
+            }
+        });
+    });
     </script>
 </body>
 </html>
