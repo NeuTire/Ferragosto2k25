@@ -740,15 +740,22 @@
             rootMargin: '0px 0px -50px 0px'
         };
 
-        const observer = new IntersectionObserver(function(entries) {
-            requestIdleCallback(() => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                    }
-                });
-            });
-        }, observerOptions);
+        const observer = new IntersectionObserver(function (entries) {
+    const applyVisible = () => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    };
+
+    if ('requestIdleCallback' in window) {
+        requestIdleCallback(applyVisible);
+    } else {
+        // Fallback per Safari e browser che non supportano requestIdleCallback
+        applyVisible();
+    }
+}, observerOptions);
 
         document.querySelectorAll('.fade-up').forEach(el => {
             observer.observe(el);
