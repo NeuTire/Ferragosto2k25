@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ferragosto 2025 - Villa Mezzina</title>
+    
+    <!-- Optimized font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Full Bootstrap and FontAwesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Navigation - EXACT ORIGINAL STRUCTURE -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#home">
@@ -167,338 +174,331 @@
         <div class="section-divider"></div>
     </section>
 
-    <!-- Fixed Venue Section -->
-<section id="venue" class="fade-up">
-    <div class="container wave-parent">
-        <h2 class="section-title">🏖️ Villa Al Mare</h2>
-        <div class="row g-4">
-            <div class="col-lg-8">
-                <div class="dark-card wave-effect">
-                    <div id="venueCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#venueCarousel" data-bs-slide-to="0" class="active"></button>
-                            <button type="button" data-bs-target="#venueCarousel" data-bs-slide-to="1"></button>
-                            <button type="button" data-bs-target="#venueCarousel" data-bs-slide-to="2"></button>
-                            <button type="button" data-bs-target="#venueCarousel" data-bs-slide-to="3"></button>
-                            <button type="button" data-bs-target="#venueCarousel" data-bs-slide-to="4"></button>
-                            <button type="button" data-bs-target="#venueCarousel" data-bs-slide-to="5"></button>
-                        </div>  
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="venue-image">
-                                    <img src="1.jpeg" class="d-block w-100" alt="Villa Al Mare - Vista Principale">
+    <!-- Venue Section - EXACT ORIGINAL CAROUSEL -->
+    <section id="venue" class="fade-up">
+        <div class="container wave-parent">
+            <h2 class="section-title">🏖️ Villa Al Mare</h2>
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="dark-card wave-effect">
+                        <div id="venueCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#venueCarousel" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#venueCarousel" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#venueCarousel" data-bs-slide-to="2"></button>
+                                <button type="button" data-bs-target="#venueCarousel" data-bs-slide-to="3"></button>
+                                <button type="button" data-bs-target="#venueCarousel" data-bs-slide-to="4"></button>
+                                <button type="button" data-bs-target="#venueCarousel" data-bs-slide-to="5"></button>
+                            </div>  
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="venue-image">
+                                        <img src="1.jpeg" class="d-block w-100" alt="Villa Al Mare - Vista Principale" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="venue-image">
+                                        <img src="2.jpeg" class="d-block w-100" alt="Piscina Villa Al Mare" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="venue-image">
+                                        <img src="3.jpeg" class="d-block w-100" alt="Spiaggia Privata" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="venue-image">
+                                        <img src="4.jpeg" class="d-block w-100" alt="Giardino Villa" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="venue-image">
+                                        <img src="5.jpeg" class="d-block w-100" alt="Terrazza Villa" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="venue-image">
+                                        <img src="6.jpeg" class="d-block w-100" alt="Terrazza Villa" loading="lazy">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="venue-image">
-                                    <img src="2.jpeg" class="d-block w-100" alt="Piscina Villa Al Mare">
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="venue-image">
-                                    <img src="3.jpeg" class="d-block w-100" alt="Spiaggia Privata">
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="venue-image">
-                                    <img src="4.jpeg" class="d-block w-100" alt="Giardino Villa">
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="venue-image">
-                                    <img src="5.jpeg" class="d-block w-100" alt="Terrazza Villa">
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="venue-image">
-                                    <img src="6.jpeg" class="d-block w-100" alt="Terrazza Villa">
-                                </div>
-                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#venueCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#venueCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#venueCarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#venueCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="dark-card wave-effect h-100">
-                    <h3 class="text-primary mb-4">
-                        <i class="fas fa-home"></i> La Location
-                    </h3>
-                    <div class="venue-features">
-                        <div class="feature-item">
-                            <i class="fas fa-swimming-pool"></i>
-                            <span>Piscina</span>
+                <div class="col-lg-4">
+                    <div class="dark-card wave-effect h-100">
+                        <h3 class="text-primary mb-4">
+                            <i class="fas fa-home"></i> La Location
+                        </h3>
+                        <div class="venue-features">
+                            <div class="feature-item">
+                                <i class="fas fa-swimming-pool"></i>
+                                <span>Piscina</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-tree"></i>
+                                <span>Giardino</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-music"></i>
+                                <span>Sistema Audio</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-fire"></i>
+                                <span>Area BBQ</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-car"></i>
+                                <span>Parcheggio Disponibile</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-wifi"></i>
+                                <span>WiFi Gratuito</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-cocktail"></i>
+                                <span>Bar Attrezzato</span>
+                            </div>
                         </div>
-                        <div class="feature-item">
-                            <i class="fas fa-tree"></i>
-                            <span>Giardino</span>
+                        <div class="venue-description mt-4">
+                            <p>Villa Mezzina è una location esclusiva. Con i suoi spazi eleganti e le attrezzature moderne, offre il setting perfetto per un Ferragosto indimenticabile.</p>
                         </div>
-                        <div class="feature-item">
-                            <i class="fas fa-music"></i>
-                            <span>Sistema Audio</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-fire"></i>
-                            <span>Area BBQ</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-car"></i>
-                            <span>Parcheggio Disponibile</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-wifi"></i>
-                            <span>WiFi Gratuito</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-cocktail"></i>
-                            <span>Bar Attrezzato</span>
-                        </div>
-                    </div>
-                    <div class="venue-description mt-4">
-                        <p>Villa Mezzina è una location esclusiva. Con i suoi spazi eleganti e le attrezzature moderne, offre il setting perfetto per un Ferragosto indimenticabile.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="section-divider"></div>
-</section>
+        <div class="section-divider"></div>
+    </section>
 
     <!-- Staff Section -->
-<!-- Staff Section -->
-<section id="staff" class="fade-up">
-    <div class="container wave-parent">
-        <h2 class="section-title">👨‍🍳 Meet the Staff</h2>
+    <section id="staff" class="fade-up">
+        <div class="container wave-parent">
+            <h2 class="section-title">👨‍🍳 Meet the Staff</h2>
 
-        <!-- Unica riga staff -->
-        <div class="row g-4 justify-content-center">
-            <!-- Alessio -->
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-2">
-                <div class="staff-card dark-card wave-effect">
-                    <div class="staff-image">
-                        <img src="Alessio.jpeg" alt="Alessio" class="rotating-image">
-                        <div class="staff-overlay">
-                            <i class="fas fa-clipboard-list"></i>
+            <div class="row g-4 justify-content-center">
+                <!-- Alessio -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-2">
+                    <div class="staff-card dark-card wave-effect">
+                        <div class="staff-image">
+                            <img src="Alessio.jpeg" alt="Alessio" class="rotating-image" loading="lazy">
+                            <div class="staff-overlay">
+                                <i class="fas fa-clipboard-list"></i>
+                            </div>
+                        </div>
+                        <div class="staff-info">
+                            <h4>Alessio</h4>
+                            <p class="staff-role">Organizzatore e Sponsor della Pubblicità</p>
+                            <p class="staff-description">Figura chiave nell'organizzazione dell'evento e promotore della campagna pubblicitaria, si assicura che ogni dettaglio raggiunga il pubblico giusto.</p>
                         </div>
                     </div>
-                    <div class="staff-info">
-                        <h4>Alessio</h4>
-                        <p class="staff-role">Organizzatore e Sponsor della Pubblicità</p>
-                        <p class="staff-description">Figura chiave nell'organizzazione dell'evento e promotore della campagna pubblicitaria, si assicura che ogni dettaglio raggiunga il pubblico giusto.</p>
+                </div>
+
+                <!-- Anna -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-2">
+                    <div class="staff-card dark-card wave-effect">
+                        <div class="staff-image">
+                            <img src="Anna.jpeg" alt="Anna" class="rotating-image" loading="lazy">
+                            <div class="staff-overlay">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                        </div>
+                        <div class="staff-info">
+                            <h4>Anna</h4>
+                            <p class="staff-role">Head Chef</p>
+                            <p class="staff-description">Responsabile della cucina, Anna guiderà la preparazione dei piatti con passione e creatività, offrendo un'esperienza gastronomica impeccabile.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alberto -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-2">
+                    <div class="staff-card dark-card wave-effect">
+                        <div class="staff-image">
+                            <img src="Alberto.jpeg" alt="Alberto" class="rotating-image" loading="lazy">
+                            <div class="staff-overlay">
+                                <i class="fas fa-music"></i>
+                            </div>
+                        </div>
+                        <div class="staff-info">
+                            <h4>Alberto</h4>
+                            <p class="staff-role">Responsabile DJ Set e Head Bartender</p>
+                            <p class="staff-description">Alberto animerà la serata con la selezione musicale perfetta e vi delizierà con cocktail d'autore per ogni fase dell'evento.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Daniele -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-2">
+                    <div class="staff-card dark-card wave-effect">
+                        <div class="staff-image">
+                            <img src="Daniele.jpeg" alt="Daniele Spampinato" class="rotating-image" loading="lazy">
+                            <div class="staff-overlay">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                        </div>
+                        <div class="staff-info">
+                            <h4>Daniele Spampinato</h4>
+                            <p class="staff-role">Responsabile Sicurezza</p>
+                            <p class="staff-description">Daniele garantirà la sicurezza e il benessere di tutti gli ospiti durante l'evento, supervisionando ogni aspetto della sicurezza con professionalità e discrezione.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gatita -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-2">
+                    <div class="staff-card dark-card wave-effect">
+                        <div class="staff-image">
+                            <img src="Gatita2.jpeg" alt="Señorita Gatita" class="rotating-image" loading="lazy">
+                            <div class="staff-overlay">
+                                <i class="fas fa-clipboard-list"></i>
+                            </div>
+                        </div>
+                        <div class="staff-info">
+                            <h4>Señorita Gatita</h4>
+                            <p class="staff-role">Responsabile Intrattenimento & Mascotte</p>
+                            <p class="staff-description">Nel mondo dell'intrattenimento da un anno e quattro mesi, ovvero da tutta la sua vita! Gatita porterà un tocco di eleganza felina all'evento.</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Anna -->
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-2">
-                <div class="staff-card dark-card wave-effect">
-                    <div class="staff-image">
-                        <img src="Anna.jpeg" alt="Anna" class="rotating-image">
-                        <div class="staff-overlay">
-                            <i class="fas fa-utensils"></i>
+            <!-- Team di servizio -->
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <div class="dark-card wave-effect">
+                        <h4 class="text-primary mb-3">Il Nostro Team di Servizio</h4>
+                        <p class="text-muted">Oltre al nostro staff principale, avremo a disposizione un team completo di:</p>
+                        <div class="service-team" aria-label="Servizi disponibili">
+                            <span class="service-badge">🏊‍♂️ Bagnino qualificato</span>
+                            <span class="service-badge">🛡️ Addetto sicurezza</span>
+                            <span class="service-badge">🚗 Servizio parcheggiatore</span>
                         </div>
-                    </div>
-                    <div class="staff-info">
-                        <h4>Anna</h4>
-                        <p class="staff-role">Head Chef</p>
-                        <p class="staff-description">Responsabile della cucina, Anna guiderà la preparazione dei piatti con passione e creatività, offrendo un'esperienza gastronomica impeccabile.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Alberto -->
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-2">
-                <div class="staff-card dark-card wave-effect">
-                    <div class="staff-image">
-                        <img src="Alberto.jpeg" alt="Alberto" class="rotating-image">
-                        <div class="staff-overlay">
-                            <i class="fas fa-music"></i>
-                        </div>
-                    </div>
-                    <div class="staff-info">
-                        <h4>Alberto</h4>
-                        <p class="staff-role">Responsabile DJ Set e Head Bartender</p>
-                        <p class="staff-description">Alberto animerà la serata con la selezione musicale perfetta e vi delizierà con cocktail d'autore per ogni fase dell'evento.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Daniele -->
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-2">
-                <div class="staff-card dark-card wave-effect">
-                    <div class="staff-image">
-                        <img src="Daniele.jpeg" alt="Daniele Spampinato" class="rotating-image">
-                        <div class="staff-overlay">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                    </div>
-                    <div class="staff-info">
-                        <h4>Daniele Spampinato</h4>
-                        <p class="staff-role">Responsabile Sicurezza</p>
-                        <p class="staff-description">Daniele garantirà la sicurezza e il benessere di tutti gli ospiti durante l'evento, supervisionando ogni aspetto della sicurezza con professionalità e discrezione.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Gatita -->
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-2">
-                <div class="staff-card dark-card wave-effect">
-                    <div class="staff-image">
-                        <img src="Gatita2.jpeg" alt="Señorita Gatita" class="rotating-image">
-                        <div class="staff-overlay">
-                            <i class="fas fa-clipboard-list"></i>
-                        </div>
-                    </div>
-                    <div class="staff-info">
-                        <h4>Señorita Gatita</h4>
-                        <p class="staff-role">Responsabile Intrattenimento & Mascotte</p>
-                        <p class="staff-description">Nel mondo dell'intrattenimento da un anno e quattro mesi, ovvero da tutta la sua vita! Gatita porterà un tocco di eleganza felina all'evento.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Team di servizio -->
-        <div class="row mt-4">
-            <div class="col-12 text-center">
-                <div class="dark-card wave-effect">
-                    <h4 class="text-primary mb-3">Il Nostro Team di Servizio</h4>
-                    <p class="text-muted">Oltre al nostro staff principale, avremo a disposizione un team completo di:</p>
-                    <div class="service-team" aria-label="Servizi disponibili">
-                        <span class="service-badge">🏊‍♂️ Bagnino qualificato</span>
-                        <span class="service-badge">🛡️ Addetto sicurezza</span>
-                        <span class="service-badge">🚗 Servizio parcheggiatore</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        <div class="section-divider"></div>
+    </section>
 
-    <div class="section-divider"></div>
-</section>
-
-
-<!-- Attività Section -->
-<section id="attivita" class="fade-up">
-    <div class="container wave-parent">
-        <h2 class="section-title">🎪 Attività Speciali</h2>
-        
-        <!-- Pizza Contest - Attività Principale -->
-        <div class="row g-4 mb-5">
-            <div class="col-12">
-                <div class="dark-card wave-effect">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <h3 class="text-danger mb-3">
-                                <i class="fas fa-fire-alt"></i> Pizza Contest - Sfida tra Maestri
-                            </h3>
-                            <p class="lead mb-4">
-                                Preparati per la sfida culinaria più gustosa dell'estate! Due maestri pizzaioli si sfideranno 
-                                a colpi di impasto e creatività. Tu sarai il giudice che decreterà il vincitore!
-                            </p>
-                            
-                            <div class="contest-features mb-4">
-                                <div class="feature-highlight">
-                                    <i class="fas fa-trophy"></i>
-                                    <div>
-                                        <strong>La Sfida</strong>
-                                        <p>Giuseppe G. "Tradizione" vs Alessio L. "Innovazione" - Due scuole, un solo vincitore!</p>
+    <!-- Attività Section -->
+    <section id="attivita" class="fade-up">
+        <div class="container wave-parent">
+            <h2 class="section-title">🎪 Attività Speciali</h2>
+            
+            <!-- Pizza Contest - Attività Principale -->
+            <div class="row g-4 mb-5">
+                <div class="col-12">
+                    <div class="dark-card wave-effect">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h3 class="text-danger mb-3">
+                                    <i class="fas fa-fire-alt"></i> Pizza Contest - Sfida tra Maestri
+                                </h3>
+                                <p class="lead mb-4">
+                                    Preparati per la sfida culinaria più gustosa dell'estate! Due maestri pizzaioli si sfideranno 
+                                    a colpi di impasto e creatività. Tu sarai il giudice che decreterà il vincitore!
+                                </p>
+                                
+                                <div class="contest-features mb-4">
+                                    <div class="feature-highlight">
+                                        <i class="fas fa-trophy"></i>
+                                        <div>
+                                            <strong>La Sfida</strong>
+                                            <p>Giuseppe G. "Tradizione" vs Alessio L. "Innovazione" - Due scuole, un solo vincitore!</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="feature-highlight">
+                                        <i class="fas fa-pizza-slice"></i>
+                                        <div>
+                                            <strong>Degustazione Gratuita</strong>
+                                            <p>Assaggia entrambe le pizze e vota la tua preferita con l'app dedicata</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="feature-highlight">
+                                        <i class="fas fa-medal"></i>
+                                        <div>
+                                            <strong>Premio Speciale</strong>
+                                            <p>Il vincitore riceverà il "Golden Pizza Award 2025" più un premio speciale durante il pool party</p>
+                                        </div>
                                     </div>
                                 </div>
                                 
-                                <div class="feature-highlight">
-                                    <i class="fas fa-pizza-slice"></i>
-                                    <div>
-                                        <strong>Degustazione Gratuita</strong>
-                                        <p>Assaggia entrambe le pizze e vota la tua preferita con l'app dedicata</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="feature-highlight">
-                                    <i class="fas fa-medal"></i>
-                                    <div>
-                                        <strong>Premio Speciale</strong>
-                                        <p>Il vincitore riceverà il "Golden Pizza Award 2025" più un premio speciale durante il pool party</p>
-                                    </div>
+                                <div class="contest-timing">
+                                    <i class="fas fa-clock"></i>
+                                    <span class="time-badge">Live Show: 20:30 - 21:15</span>
+                                    <span class="time-badge">Votazione: 21:15 - 21:30</span>
                                 </div>
                             </div>
                             
-                            <div class="contest-timing">
-                                <i class="fas fa-clock"></i>
-                                <span class="time-badge">Live Show: 20:30 - 21:15</span>
-                                <span class="time-badge">Votazione: 21:15 - 21:30</span>
+                            <div class="col-lg-6">
+                                <div id="pizzaCarousel" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#pizzaCarousel" data-bs-slide-to="0" class="active"></button>
+                                        <button type="button" data-bs-target="#pizzaCarousel" data-bs-slide-to="1"></button>
+                                        <button type="button" data-bs-target="#pizzaCarousel" data-bs-slide-to="2"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="contest-image">
+                                                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80" class="d-block w-100" alt="Pizza Napoletana Tradizionale" loading="lazy">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="contest-image">
+                                                <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80" class="d-block w-100" alt="Pizzaiolo in Azione" loading="lazy">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="contest-image">
+                                                <img src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80" class="d-block w-100" alt="Pizza Gourmet Moderna" loading="lazy">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#pizzaCarousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#pizzaCarousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        
-<div class="col-lg-6">
-    <div id="pizzaCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#pizzaCarousel" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#pizzaCarousel" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#pizzaCarousel" data-bs-slide-to="2"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="contest-image">
-                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80" class="d-block w-100" alt="Pizza Napoletana Tradizionale">
+                    </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="contest-image">
-                    <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80" class="d-block w-100" alt="Pizzaiolo in Azione">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="contest-image">
-                    <img src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80" class="d-block w-100" alt="Pizza Gourmet Moderna">
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#pizzaCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#pizzaCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-</div>
-
+            
+            <!-- Attività Speciali Bottom -->
+            <div class="row g-4 mt-4 justify-content-center">
+                <div class="col-md-6 col-lg-5">
+                    <div class="dark-card wave-effect special-activity">
+                        <h4 class="text-success mb-3">
+                            <i class="fas fa-cocktail"></i> 🍹 Mixology Workshop
+                        </h4>
+                        <p>Impara a preparare i cocktail più famosi con il nostro head bartender Alberto. Ricette segrete incluse!</p>
+                        <div class="special-features">
+                            <span class="feature-badge">🥃 Ricette esclusive</span>
+                            <span class="feature-badge">🍋 Ingredienti premium</span>
+                            <span class="feature-badge">📜 Certificato partecipazione</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- Attività Speciali Bottom -->
-        <!-- Attività Speciali Bottom -->
-<div class="row g-4 mt-4 justify-content-center">
-    <div class="col-md-6 col-lg-5">
-        <div class="dark-card wave-effect special-activity">
-            <h4 class="text-success mb-3">
-                <i class="fas fa-cocktail"></i> 🍹 Mixology Workshop
-            </h4>
-            <p>Impara a preparare i cocktail più famosi con il nostro head bartender Alberto. Ricette segrete incluse!</p>
-            <div class="special-features">
-                <span class="feature-badge">🥃 Ricette esclusive</span>
-                <span class="feature-badge">🍋 Ingredienti premium</span>
-                <span class="feature-badge">📜 Certificato partecipazione</span>
-            </div>
-        </div>
-    </div>
-</div>
-    </div>
-    <div class="section-divider"></div>
-</section>
-
-
+        <div class="section-divider"></div>
+    </section>
 
     <!-- Menu Section -->
     <section id="menu" class="fade-up">
@@ -699,6 +699,27 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     <script>
+        // EXACT ORIGINAL JAVASCRIPT WITH PERFORMANCE OPTIMIZATIONS
+        
+        // Optimized scroll handling
+        let ticking = false;
+        function updateNavbar() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+            ticking = false;
+        }
+
+        window.addEventListener('scroll', function() {
+            if (!ticking) {
+                requestAnimationFrame(updateNavbar);
+                ticking = true;
+            }
+        });
+
         // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -713,27 +734,19 @@
             });
         });
 
-        // Navbar background on scroll
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // Fade up animation on scroll
+        // Optimized intersection observer
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
         };
 
         const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
+            requestIdleCallback(() => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
             });
         }, observerOptions);
 
@@ -741,7 +754,7 @@
             observer.observe(el);
         });
 
-        // Venue carousel auto-play with pause on hover
+        // Venue carousel optimization
         const venueCarousel = document.getElementById('venueCarousel');
         if (venueCarousel) {
             const carousel = new bootstrap.Carousel(venueCarousel, {
@@ -760,21 +773,33 @@
             });
         }
 
+        // Pizza carousel
+        const pizzaCarousel = document.getElementById('pizzaCarousel');
+        if (pizzaCarousel) {
+            const carousel = new bootstrap.Carousel(pizzaCarousel, {
+                interval: 3000,
+                wrap: true,
+                touch: true
+            });
+        }
+
         // Staff cards staggered animation
         const staffCards = document.querySelectorAll('.staff-card');
         staffCards.forEach((card, index) => {
             card.style.animationDelay = `${index * 0.2}s`;
         });
 
-        // Service badges animation
+        // Service badges animation with will-change optimization
         const serviceBadges = document.querySelectorAll('.service-badge');
         serviceBadges.forEach((badge, index) => {
             badge.addEventListener('mouseenter', function() {
+                this.style.willChange = 'transform';
                 this.style.transform = 'translateY(-3px) scale(1.05)';
             });
             
             badge.addEventListener('mouseleave', function() {
                 this.style.transform = 'translateY(0) scale(1)';
+                this.style.willChange = 'auto';
             });
         });
 
@@ -813,15 +838,16 @@
             }, 3000);
         }
 
+        // Mobile menu auto-close
         document.querySelectorAll('.navbar-collapse .nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-            const navbarCollapse = document.querySelector('.navbar-collapse');
-            const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
-            if (bsCollapse && navbarCollapse.classList.contains('show')) {
-                bsCollapse.hide();
-            }
+            link.addEventListener('click', () => {
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+                if (bsCollapse && navbarCollapse.classList.contains('show')) {
+                    bsCollapse.hide();
+                }
+            });
         });
-    });
     </script>
 </body>
 </html>
