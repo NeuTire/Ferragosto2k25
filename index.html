@@ -89,6 +89,18 @@
         </div>
     </section>
 
+    <!-- Music Control Section -->
+<div class="music-control-container fade-up">
+    <p align="center">Music?</p>
+    <audio id="bgMusic" loop>
+        <source src="ferragosto2025.mp3" type="audio/mpeg">
+        Il tuo browser non supporta l'audio HTML5.
+    </audio>
+    <button id="musicToggle" class="btn-music">
+        <i class="fas fa-play"></i> Musica On/Off
+    </button>
+</div>
+
     <!-- Programma Section -->
     <section id="programma" class="fade-up">
         <div class="container wave-parent">
@@ -865,6 +877,41 @@
                 }
             });
         });
+
+const music = document.getElementById("bgMusic");
+const musicBtn = document.getElementById("musicToggle");
+let isPlaying = false;
+let hasInteracted = false;
+
+function startMusic() {
+    if (!hasInteracted) {
+        music.play().then(() => {
+            musicBtn.innerHTML = '<i class="fas fa-pause"></i> Musica On/Off';
+            isPlaying = true;
+        }).catch((err) => {
+            console.warn("Autoplay bloccato dal browser:", err);
+        });
+        hasInteracted = true;
+    }
+}
+
+document.addEventListener("click", startMusic);
+document.addEventListener("scroll", startMusic);
+document.addEventListener("touchstart", startMusic);
+
+musicBtn.addEventListener("click", () => {
+    if (isPlaying) {
+        music.pause();
+        musicBtn.innerHTML = '<i class="fas fa-play"></i> Musica On/Off';
+    } else {
+        music.play().then(() => {
+            musicBtn.innerHTML = '<i class="fas fa-pause"></i> Musica On/Off';
+        }).catch((err) => {
+            console.warn("Errore nel play manuale:", err);
+        });
+    }
+    isPlaying = !isPlaying;
+});
     </script>
 </body>
 </html>
