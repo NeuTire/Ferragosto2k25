@@ -93,7 +93,7 @@
 <div class="music-control-container fade-up">
     <p align="center">Music?</p>
     <audio id="bgMusic">
-    <source src="/img/sunshine-samba.mp3" type="audio/mpeg">
+    <source src="/img/ferragosto2025.mp3" type="audio/mpeg">
     Il tuo browser non supporta l'audio HTML5.
     </audio>
     <button id="musicToggle" class="btn-music">
@@ -924,7 +924,7 @@ function startMusic() {
 // Quando finisce la prima traccia, cambia alla seconda
 music.addEventListener("ended", () => {
     if (currentTrack === 1) {
-        music.src = "/img/ferragosto2025.mp3";
+        music.src = "/img/sunshine-samba.mp3"; // Cambia alla seconda traccia
         currentTrack = 2;
         music.loop = true; // la seconda va in loop
         music.play();
